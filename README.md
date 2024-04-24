@@ -151,8 +151,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 
-<img width="960" alt="Ticket LIfecycle - Karen's Complaint" src="https://github.com/jaysixco/ticket-lifecycle/assets/160427311/b80253e6-9fff-4e21-9a45-53b605d68663">
-<img width="959" alt="Ticket LIfecycle - Reassign Button" src="https://github.com/jaysixco/ticket-lifecycle/assets/160427311/beeacf9e-dbd6-45dd-a792-345745867684">
 
 
 
