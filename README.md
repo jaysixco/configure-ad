@@ -103,7 +103,7 @@ DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is i
 Now we'll be dealing with Client-1 <br>
 
 
-<strong> CLIENT-1 </strong> 
+<strong> CLIENT-1 </strong> <br>
 Starting in Azure, go to DNS server and make it DC-1's private IP <br>
 Hit restart so it logs you out of Client-1 remote desktop <br>
 Log back in as labuser (remember, we haven't joined it to any domain yet) <br>
