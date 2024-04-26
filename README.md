@@ -90,8 +90,11 @@ Finish.
 
 <strong> SUMMARY (in my own words):</strong>  <br>
 Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) <br>
+▪︎Can do <br> 
 Change DC-1 NIC to static, <br> 
+▪︎How? <br> 
 Login to DC-1's firewall (hint: type) and enable ICMPv4 traffic <br>
+▪︎Enable - how? <br>
 Login to Client-1 and ping DC-1 to see if it worked <br>
 
 
