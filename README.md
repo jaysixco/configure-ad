@@ -37,65 +37,14 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<strong>Setup Resources in Azure</strong>
-Create the Domain Controller VM (Windows Server 2022) named “DC-1”
-Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
-Set Domain Controller’s NIC Private IP address to be static
-Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a
-
-  
-<strong> Ensure Connectivity between the client and Domain Controller </strong>
-Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping) don't ping through powershell
-Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall - There's 2 ICMPv4's. Enable rule for both to work.
-Check back at Client-1 to see the ping succeed
-
-<strong> Install Active Directory </strong>
-Login to DC-1 and install Active Directory Domain Services
-Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
-Restart and then log back into DC-1 as user: mydomain.com\labuser (the black slash matters!!! If you use a forward slash (/), it will not work!)
-
-<strong> Create an Admin and Normal User Account in AD </strong>
-In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
-Create a new OU named “_ADMINS”
-Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
-Add jane_admin to the “Domain Admins” Security Group
-Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
-User jane_admin as your admin account from now on
-
-
-<strong> Join Client-1 to your domain (mydomain.com) </strong>
-From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
-From the Azure Portal, restart Client-1
-Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
-Create a new OU named “_CLIENTS” and drag Client-1 into there (Step is not really necessary, just for organizational purposes. I guess I skipped this in the lab!)
-
-
-<strong> Setup Remote Desktop for non-administrative users on Client-1 </strong>
-Log into Client-1 as mydomain.com\jane_admin and open system properties
-Click “Remote Desktop”
-Allow “domain users” access to remote desktop
-You can now log into Client-1 as a normal, non-administrative user now
-Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
-
-<strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong>
-Login to DC-1 as jane_admin
-Open PowerShell_ise as an administrator
-Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
-Run the script and observe the accounts being created
-When finished, open ADUC and observe the accounts in the appropriate OU
-attempt to log into Client-1 with one of the accounts (take note of the password in the script)
-
-Finish.
-
 <strong> SUMMARY (in my own words):</strong>  <br>
-Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) <br>
-▪︎Can do <br> 
-Change DC-1 NIC to static, <br> 
-▪︎DC-1 > Networking > Network Interface > IP configurations > scroll down and click ipconfig > click static > Save <br> 
-Login to DC-1's firewall (hint: type) and enable ICMPv4 traffic <br>
-▪︎Enable - Start menu > type firewall > click option with 'Advanced Security' > Inbound Rules > widen screen so you can see Protocol tab > right click ICMPv4EchoRequests > Enable rule (there's two enable both of them in turn) <br>
-Login to Client-1 and ping DC-1 to see if it worked <br>
+<strong> Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) </strong><br>
+<strong> Change DC-1 NIC to static </strong><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;  DC-1 > Networking > Network Interface > IP configurations > scroll down and click ipconfig > click static > Save <br> 
+<strong> Login to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Enable - Start menu > type firewall > click option with 'Advanced Security' > Inbound Rules > widen screen so you can see Protocol tab > 
+&nbsp;&nbsp;&nbsp;&nbsp;  right click ICMPv4EchoRequests > Enable rule (there's two enable both of them in turn) <br>
+<strong> Login to Client-1 and ping DC-1 to see if it worked  </strong><br>
 
 
 <strong> DC-1 </strong>  
@@ -148,6 +97,63 @@ Finish.
 
 
 Use the simple list for the last part
+
+
+
+
+
+  
+<strong>Setup Resources in Azure</strong>
+Create the Domain Controller VM (Windows Server 2022) named “DC-1”
+Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
+Set Domain Controller’s NIC Private IP address to be static
+Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a
+
+  
+<strong> Ensure Connectivity between the client and Domain Controller </strong>
+Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping) don't ping through powershell
+Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall - There's 2 ICMPv4's. Enable rule for both to work.
+Check back at Client-1 to see the ping succeed
+
+<strong> Install Active Directory </strong>
+Login to DC-1 and install Active Directory Domain Services
+Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+Restart and then log back into DC-1 as user: mydomain.com\labuser (the black slash matters!!! If you use a forward slash (/), it will not work!)
+
+<strong> Create an Admin and Normal User Account in AD </strong>
+In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+Create a new OU named “_ADMINS”
+Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
+Add jane_admin to the “Domain Admins” Security Group
+Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
+User jane_admin as your admin account from now on
+
+
+<strong> Join Client-1 to your domain (mydomain.com) </strong>
+From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+From the Azure Portal, restart Client-1
+Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
+Create a new OU named “_CLIENTS” and drag Client-1 into there (Step is not really necessary, just for organizational purposes. I guess I skipped this in the lab!)
+
+
+<strong> Setup Remote Desktop for non-administrative users on Client-1 </strong>
+Log into Client-1 as mydomain.com\jane_admin and open system properties
+Click “Remote Desktop”
+Allow “domain users” access to remote desktop
+You can now log into Client-1 as a normal, non-administrative user now
+Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+
+<strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong>
+Login to DC-1 as jane_admin
+Open PowerShell_ise as an administrator
+Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+Run the script and observe the accounts being created
+When finished, open ADUC and observe the accounts in the appropriate OU
+attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+
+Finish.
+
 
 
 </p>
