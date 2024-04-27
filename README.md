@@ -121,28 +121,28 @@ Create an Admin account and a place to store all the users we'll create later <b
   Now we'll be dealing with Client-1 <br>
 <br>
 <strong> CLIENT-1 </strong> <br>
-&nsbp; Starting in Azure, go to DNS server and make it DC-1's private IP <br>
-&nsbp; Get DC's Private IP address first (should be 10.0.0.x) <br>
-&nsbp; Go to Client-1 > Networking > Network Interface > DNS servers > Custom > Paste DC-1's Private IP > Save <br>
-&nsbp; Hit restart so it logs you out of Client-1 remote desktop <br>
-&nsbp; Log back in as labuser (remember, we haven't joined it to any domain yet) <br>
-&nsbp; Rename the PC (hint: Start > System) as mydomain.com\jane_admin <br>
-&nsbp; Right click the start button > Systems > Rename this pc (advanced) > Change > Domain > type mydomain.com > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
+&nbsp; Starting in Azure, go to DNS server and make it DC-1's private IP <br>
+&nbsp; Get DC's Private IP address first (should be 10.0.0.x) <br>
+&nbsp; Go to Client-1 > Networking > Network Interface > DNS servers > Custom > Paste DC-1's Private IP > Save <br>
+&nbsp; Hit restart so it logs you out of Client-1 remote desktop <br>
+&nbsp; Log back in as labuser (remember, we haven't joined it to any domain yet) <br>
+&nbsp; Rename the PC (hint: Start > System) as mydomain.com\jane_admin <br>
+&nbsp; Right click the start button > Systems > Rename this pc (advanced) > Change > Domain > type mydomain.com > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
 <br>
 <strong> Remote Desktop for non-administrative users on Client-1 </strong>
-&nsbp; Log into Client-1 as mydomain.com\jane_admin and open system properties <br>
-&nsbp; Click “Remote Desktop” <br>
-&nsbp; Allow “domain users” access to remote desktop <br>
-&nsbp; You can now log into Client-1 as a normal, non-administrative user now <br>
-&nsbp; Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab) <br>
+&nbsp; Log into Client-1 as mydomain.com\jane_admin and open system properties <br>
+&nbsp; Click “Remote Desktop” <br>
+&nbsp; Allow “domain users” access to remote desktop <br>
+&nbsp; You can now log into Client-1 as a normal, non-administrative user now <br>
+&nbsp; Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab) <br>
 <br>
 <strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
-&nsbp; Login to DC-1 as jane_admin <br>
-&nsbp; Open PowerShell_ise as an administrator <br>
-&nsbp; Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) <br>
-&nsbp; Run the script and observe the accounts being created <br>
-&nsbp; When finished, open ADUC and observe the accounts in the appropriate OU <br>
-&nsbp; attempt to log into Client-1 with one of the accounts (take note of the password in the script) <br>
+&nbsp; Login to DC-1 as jane_admin <br>
+&nbsp; Open PowerShell_ise as an administrator <br>
+&nbsp; Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) <br>
+&nbsp; Run the script and observe the accounts being created <br>
+&nbsp; When finished, open ADUC and observe the accounts in the appropriate OU <br>
+&nbsp; attempt to log into Client-1 with one of the accounts (take note of the password in the script) <br>
 <br>
 Finish.
 
