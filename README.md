@@ -48,50 +48,47 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 
 
 <strong> DC-1 </strong>  
-Install ADDS + setup forest <br>
-Install ADDS - Service Manager > 'Add roles and features' > Only two buttons you should be clicking are 'Next' and 'Install' <br>
-Set up new forest = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a flag and a triangle with an exclamation point in it, click it > Promote > Add a new forest > mydomain.com > J~S~2 <br>
-Log back in as mydomain.com\labuser (because we have no jane_admin yet) <br>
-Create an Admin account and a place to store all the users we'll create later <br>
-  In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES” <br>
-&nbsp;&nbsp; Right click mydomain.com > New > Organizational Unit
-(Underscore not mandatory in '_EMPLOYEES', but done for the lab)
-  Create a new OU named “_ADMINS” <br>
-&nbsp;&nbsp; 
-  Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” <br>
-  DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)  <br>
-&nbsp;&nbsp; Right click '_ADMINS' > New > User
-  Add jane_admin to the “Domain Admins” Security Group <br>
-&nbsp;&nbsp; Right click jane_admin > Properties > Member of tab > type domain > Check names > Domain Admins > OK > Apply > OK 
-  Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin” <br>
-&nbsp;&nbsp; 
-  User jane_admin as your admin account from now on <br>
+<strong> Install ADDS + setup forest </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Install ADDS - Service Manager > 'Add roles and features' > Only two buttons you should be clicking are 'Next' and 'Install' <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Set up new forest = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a flag and a triangle with an exclamation point in it, click it > Promote > Add a new forest > mydomain.com > J~S~2 <br>
+<strong> Log back in as mydomain.com\labuser (because we have no jane_admin yet)  </strong><br>
+<strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
+<strong> In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > (Underscore not mandatory in '_EMPLOYEES', but done for the lab)
+<strong> Create a new OU named “_ADMINS”  </strong><br>
+<strong> Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”  </strong><br>
+<strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click '_ADMINS' > New > User
+<strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click jane_admin > Properties > Member of tab > type domain > Check names > Domain Admins > OK > Apply > OK 
+<strong> Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”  </strong><br>
+<strong> User jane_admin as your admin account from now on  </strong><br>
 <br>
-  Now we'll be dealing with Client-1 <br>
+<strong> Now we'll be dealing with Client-1  </strong><br>
 <br>
 <strong> CLIENT-1 </strong> <br>
-&nbsp; Starting in Azure, go to DNS server and make it DC-1's private IP <br>
-&nbsp; Get DC's Private IP address first (should be 10.0.0.x) <br>
-&nbsp; Go to Client-1 > Networking > Network Interface > DNS servers > Custom > Paste DC-1's Private IP > Save <br>
-&nbsp; Hit restart so it logs you out of Client-1 remote desktop <br>
-&nbsp; Log back in as labuser (remember, we haven't joined it to any domain yet) <br>
-&nbsp; Rename the PC (hint: Start > System) as mydomain.com\jane_admin <br>
-&nbsp; Right click the start button > Systems > Rename this pc (advanced) > Change > Domain > type mydomain.com > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
+<strong> Starting in Azure, go to DNS server and make it DC-1's private IP </strong> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Get DC's Private IP address first (should be 10.0.0.x) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Go to Client-1 > Networking > Network Interface > DNS servers > Custom > Paste DC-1's Private IP > Save <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Hit restart so it logs you out of Client-1 remote desktop <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Log back in as labuser (remember, we haven't joined it to any domain yet) <br>
+<strong> Rename the PC (hint: Start > System) as mydomain.com\jane_admin </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Right click the start button > Systems > Rename this pc (advanced) > Change > Domain > type mydomain.com > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
 <br>
-<strong> Remote Desktop for non-administrative users on Client-1 </strong>
-&nbsp; Log into Client-1 as mydomain.com\jane_admin and open system properties <br>
-&nbsp; Click “Remote Desktop” <br>
-&nbsp; Allow “domain users” access to remote desktop <br>
-&nbsp; You can now log into Client-1 as a normal, non-administrative user now <br>
-&nbsp; Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab) <br>
+<strong> Remote Desktop for non-administrative users on Client-1 </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Log into Client-1 as mydomain.com\jane_admin and open system properties <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Click “Remote Desktop” <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Allow “domain users” access to remote desktop <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   You can now log into Client-1 as a normal, non-administrative user now <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab) <br>
 <br>
 <strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
-&nbsp; Login to DC-1 as jane_admin <br>
-&nbsp; Open PowerShell_ise as an administrator <br>
-&nbsp; Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) <br>
-&nbsp; Run the script and observe the accounts being created <br>
-&nbsp; When finished, open ADUC and observe the accounts in the appropriate OU <br>
-&nbsp; attempt to log into Client-1 with one of the accounts (take note of the password in the script) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Login to DC-1 as jane_admin <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Open PowerShell_ise as an administrator <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Run the script and observe the accounts being created <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   When finished, open ADUC and observe the accounts in the appropriate OU <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   attempt to log into Client-1 with one of the accounts (take note of the password in the script) <br>
 <br>
 Finish.
 
