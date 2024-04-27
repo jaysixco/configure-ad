@@ -92,27 +92,59 @@ Finish.
 Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) <br>
 ▪︎Can do <br> 
 Change DC-1 NIC to static, <br> 
-▪︎How? <br> 
+▪︎DC-1 > Networking > Network Interface > IP configurations > scroll down and click ipconfig > click static > Save <br> 
 Login to DC-1's firewall (hint: type) and enable ICMPv4 traffic <br>
-▪︎Enable - how? <br>
+▪︎Enable - Start menu > type firewall > click option with 'Advanced Security' > Inbound Rules > widen screen so you can see Protocol tab > right click ICMPv4EchoRequests > Enable rule (there's two enable both of them in turn) <br>
 Login to Client-1 and ping DC-1 to see if it worked <br>
 
 
 <strong> DC-1 </strong>  
 Install ADDS + setup forest <br>
+Install ADDS - Service Manager > 'Add roles and features' > Only two buttons you should be clicking are 'Next' and 'Install' <br>
+Set up new forest = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a flag and a triangle with an exclamation point in it, click it > Promote > Add a new forest > mydomain.com > J~S~2 <br>
 Log back in as mydomain.com\labuser (because we have no jane_admin yet) <br>
-Create an Admin account and a place to store all the users we'll create later (hint: starts with “_E”) <br>
-DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)  <br>
-Now we'll be dealing with Client-1 <br>
-
-
+Create an Admin account and a place to store all the users we'll create later <br>
+  In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES” <br>
+&nbsp;&nbsp; Right click mydomain.com > New > Organizational Unit
+(Underscore not mandatory in '_EMPLOYEES', but done for the lab)
+  Create a new OU named “_ADMINS” <br>
+&nbsp;&nbsp; 
+  Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” <br>
+  DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)  <br>
+&nbsp;&nbsp; Right click '_ADMINS' > New > User
+  Add jane_admin to the “Domain Admins” Security Group <br>
+&nbsp;&nbsp; Right click jane_admin > Properties > Member of tab > type domain > Check names > Domain Admins > OK > Apply > OK 
+  Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin” <br>
+&nbsp;&nbsp; 
+  User jane_admin as your admin account from now on <br>
+<br>
+  Now we'll be dealing with Client-1 <br>
+<br>
 <strong> CLIENT-1 </strong> <br>
 Starting in Azure, go to DNS server and make it DC-1's private IP <br>
+&nsbp; Get DC's Private IP address first (should be 10.0.0.x) <br>
+Go to Client-1 > Networking > Network Interface > DNS servers > Custom > Paste DC-1's Private IP > Save <br>
 Hit restart so it logs you out of Client-1 remote desktop <br>
 Log back in as labuser (remember, we haven't joined it to any domain yet) <br>
 Rename the PC (hint: Start > System) as mydomain.com\jane_admin <br>
-Now you can log back in as mydomain.com\jane_admin <br>
-Then allow users to access this computer through Start>Systems>Remote Desktop>Select users… (this will allow all the users we're about to create access to this computer) <br>
+&nsbp; Right click the start button > Systems > Rename this pc (advanced) > Change > Domain > type mydomain.com > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
+<strong> Remote Desktop for non-administrative users on Client-1 </strong>
+Log into Client-1 as mydomain.com\jane_admin and open system properties <br>
+Click “Remote Desktop” <br>
+Allow “domain users” access to remote desktop <br>
+You can now log into Client-1 as a normal, non-administrative user now <br>
+Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab) <br>
+<br>
+<strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
+Login to DC-1 as jane_admin <br>
+Open PowerShell_ise as an administrator <br>
+Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) <br>
+Run the script and observe the accounts being created <br>
+When finished, open ADUC and observe the accounts in the appropriate OU <br>
+attempt to log into Client-1 with one of the accounts (take note of the password in the script) <br>
+<br>
+Finish.
+
 
 Use the simple list for the last part
 
