@@ -38,7 +38,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 </p>
 <p>
 <strong> SUMMARY (in my own words):</strong>  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em> <br>
 <strong> Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) </strong><br>
 <strong> Change DC-1 NIC to static </strong><br> 
 &nbsp;&nbsp;&nbsp;&nbsp;  DC-1 > Networking > Network Interface > IP configurations > scroll down and click ipconfig > click static > Save <br> 
