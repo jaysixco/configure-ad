@@ -58,7 +58,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 Keep clicking next until you get to "Server Roles" tab (following screen). Click the box next to "Active Directory Domain Services" <br>
 <img width="588" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/828837cc-8ec0-47f0-b7fc-2af4be09d846">
 <br>
-<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a <br> &nbsp;&nbsp;&nbsp;&nbsp;  flag and a triangle with an exclamation point in it, click it > Promote > Add a new forest > mydomain.com > J~S~2 <br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a <br> &nbsp;&nbsp;&nbsp;&nbsp;  flag and a triangle with an exclamation point in it, click it > Promote > Add a new forest > mydomain.com > create a password > keep clicking next <br>
 <strong> Log back in as mydomain.com\labuser (because we have no jane_admin yet)  </strong><br>
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
 <strong> In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
@@ -132,9 +132,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
+<img width="960" alt="Capture-flagexclamation" src="https://github.com/jaysixco/configure-ad/assets/160427311/a2ece7b8-c4ba-422f-abcd-19563e47730d">
 
 
 
+
+<img width="960" alt="Capture1-promote" src="https://github.com/jaysixco/configure-ad/assets/160427311/3ad10f34-be38-48bd-86cd-66b59f1b2666">
+
+
+<img width="572" alt="Capture2-addforest+username" src="https://github.com/jaysixco/configure-ad/assets/160427311/8d2b9ec8-889b-4909-ad7f-18e224ec7521">
+
+<img width="574" alt="Capture3-password" src="https://github.com/jaysixco/configure-ad/assets/160427311/6b7d40ee-0b20-4de0-bce2-57e2fdf01a12">
 
 
 
