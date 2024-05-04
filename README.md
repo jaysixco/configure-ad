@@ -81,6 +81,7 @@ create a password >  <br>
 <br>
 <strong> Keep clicking next until you can't anymore. Then click Install. Wait. After it installs, it will automatically log you out. </strong><br>
 <strong> If you try to log back in with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser).  </strong><br>
+<br>
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
 <strong> In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > (Underscore not mandatory in '_EMPLOYEES', but done for the lab) <br>
