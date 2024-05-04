@@ -52,7 +52,12 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 
 <strong> DC-1 </strong>  
 <strong> Install ADDS + setup forest </strong><br>
-<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = Service Manager > 'Add roles and features' > Only two buttons you should be clicking are 'Next' and 'Install' <br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = Service Manager > 'Add roles and features' <br>
+<img width="960" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/86f64b1b-abfc-435f-a5ee-8e7135ec307e">
+<br>
+Keep clicking next until you get to "Server Roles" tab (following screen). Click the box next to "Active Directory Domain Services" <br>
+<img width="588" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/828837cc-8ec0-47f0-b7fc-2af4be09d846">
+<br>
 <strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a <br> &nbsp;&nbsp;&nbsp;&nbsp;  flag and a triangle with an exclamation point in it, click it > Promote > Add a new forest > mydomain.com > J~S~2 <br>
 <strong> Log back in as mydomain.com\labuser (because we have no jane_admin yet)  </strong><br>
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
