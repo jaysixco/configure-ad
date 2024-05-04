@@ -82,20 +82,42 @@ create a password >  <br>
 <strong> Keep clicking next until you can't anymore. Then click Install. Wait. After it installs, it will automatically log you out. </strong><br>
 <strong> If you try to log back in with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser).  </strong><br>
 <br>
+
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
-<strong> In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
+<strong> Log in to DC-1. Go to Start Menu/Search box and type in "Active Directory" and click "Active Directory Users and Computers (ADUC)" > <br>
+Screenshot 
+<br>
+
+<strong> Create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > (Underscore not mandatory in '_EMPLOYEES', but done for the lab) <br>
+Possible screenshot
+<br>
+
 <strong> Create a new OU named “_ADMINS”  </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > <br>
+Possible screenshot
+<br>
+
 <strong> Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”  </strong><br>
+Possible screenshot
+<br>
+
 <strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click '_ADMINS' > New > User
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click '_ADMINS' > New > User <br>
+Possible screenshot
+<br>
+
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click jane_admin > Properties > Member of tab > type domain > Check names > Domain Admins > OK > Apply > OK 
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click jane_admin > Properties > Member of tab > type domain > Check names > Domain Admins > OK > Apply > OK  <br>
+Possible screenshot
+<br>
+
 <strong> Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”  </strong><br>
 <strong> User jane_admin as your admin account from now on  </strong><br>
 <br>
 <strong> Now we'll be dealing with Client-1  </strong><br>
 <br>
+
 <strong> CLIENT-1 </strong> <br>
 <strong> Starting in Azure, go to DNS server and make it DC-1's private IP </strong> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   Get DC's Private IP address first (should be 10.0.0.x) <br>
@@ -106,11 +128,13 @@ create a password >  <br>
 <strong> Rename the PC (hint: Start > System) as mydomain.com\jane_admin </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;   Right click the start button > Systems > Rename this pc (advanced) > Change > Domain > type mydomain.com > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
 <br>
+
 <strong> Remote Desktop for non-administrative users on Client-1 </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into </strong> Client-1 as mydomain.com\jane_admin and open system properties <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Remote Desktop” <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Allow </strong> “domain users” access to remote desktop </strong><br>
 <br>
+
 <strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Login </strong> to DC-1 as jane_admin <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Open </strong> PowerShell_ise as an administrator <br>
