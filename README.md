@@ -41,7 +41,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em> <br>
 <strong> Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) (Use the same Resource Group and Vnet ) </strong><br>
 <strong> Change DC-1 NIC to static </strong><br> 
-&nbsp;&nbsp;&nbsp;&nbsp;  DC-1 > Networking > Network Interface > IP configurations > scroll down and click ipconfig > click static > Save <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;  DC-1 > In the sidebar under "Networking" click "Network settings" > click IP configurations > scroll down and click ipconfig > click static > Save <br> 
 <strong> Login to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Enable - Start menu > type firewall > click option with 'Advanced Security' > Inbound Rules > widen screen so you can see Protocol tab > 
 &nbsp;&nbsp;&nbsp;&nbsp;  right click ICMPv4EchoRequests > Enable rule (there's two enable both of them in turn) <br>
