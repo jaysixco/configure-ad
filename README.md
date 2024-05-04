@@ -85,17 +85,16 @@ create a password >  <br>
 
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
 <strong> Log in to DC-1. Go to Start Menu/Search box and type in "Active Directory" and click "Active Directory Users and Computers (ADUC)" > <br>
-Screenshot 
+<img width="960" alt="Capture - ADUC" src="https://github.com/jaysixco/configure-ad/assets/160427311/b947408d-dde2-4fdd-9b40-57cb426ec615">
 <br>
 
 <strong> Create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > (Underscore not mandatory in '_EMPLOYEES', but done for the lab) <br>
-Possible screenshot
+<img width="565" alt="Capture - OU" src="https://github.com/jaysixco/configure-ad/assets/160427311/d7c7cb8d-4d7c-40f7-bdd2-12d5f3374e75">
 <br>
 
 <strong> Create a new OU named “_ADMINS”  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > <br>
-Possible screenshot
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > type "_ADMINS" <br>
 <br>
 
 <strong> Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”  </strong><br>
