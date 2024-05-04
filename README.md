@@ -47,6 +47,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 &nbsp;&nbsp;&nbsp;&nbsp;  right click ICMPv4EchoRequests > Enable rule (there's two enable both of them in turn) <br>
 <strong> Login to Client-1 and ping DC-1 to see if it worked  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em>
+<img width="960" alt="ping worked" src="https://github.com/jaysixco/configure-ad/assets/160427311/59817a5c-d136-4890-886b-a99891dec9b4">
 
 
 <strong> DC-1 </strong>  
