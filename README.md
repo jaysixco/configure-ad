@@ -58,8 +58,29 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 Keep clicking next until you get to "Server Roles" tab (following screen). Click the box next to "Active Directory Domain Services" <br>
 <img width="588" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/828837cc-8ec0-47f0-b7fc-2af4be09d846">
 <br>
-<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a <br> &nbsp;&nbsp;&nbsp;&nbsp;  flag and a triangle with an exclamation point in it, click it > Promote > Add a new forest > mydomain.com > create a password > keep clicking next <br>
-<strong> Log back in as mydomain.com\labuser (because we have no jane_admin yet)  </strong><br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a <br> &nbsp;&nbsp;&nbsp;&nbsp;  flag and a triangle with an exclamation point in it, click it > <br> 
+<img width="960" alt="Capture-flagexclamation" src="https://github.com/jaysixco/configure-ad/assets/160427311/332bade1-9d4a-4ca8-b582-a198b17bfb73">
+>
+
+<br>
+
+Promote > <br>
+<img width="960" alt="Capture1-promote" src="https://github.com/jaysixco/configure-ad/assets/160427311/781927ea-eb90-4e9b-a39c-d1c089470f88">
+<br>
+
+
+Add a new forest > mydomain.com ><br>
+<img width="572" alt="Capture2-addforest+username" src="https://github.com/jaysixco/configure-ad/assets/160427311/e043bf1e-0909-4b6f-acc0-6b3faf4153cc">
+
+
+<br>
+
+create a password >  <br>
+<img width="574" alt="Capture3-password" src="https://github.com/jaysixco/configure-ad/assets/160427311/a3c31e70-009d-47b6-b403-d16e0daf85e6">
+
+<br>
+<strong> Keep clicking next until you can't anymore. Then click Install. Wait. After it installs, it will automatically log you out. </strong><br>
+<strong> If you try to log back in with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser).  </strong><br>
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
 <strong> In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > (Underscore not mandatory in '_EMPLOYEES', but done for the lab) <br>
@@ -132,17 +153,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-<img width="960" alt="Capture-flagexclamation" src="https://github.com/jaysixco/configure-ad/assets/160427311/a2ece7b8-c4ba-422f-abcd-19563e47730d">
 
-
-
-
-<img width="960" alt="Capture1-promote" src="https://github.com/jaysixco/configure-ad/assets/160427311/3ad10f34-be38-48bd-86cd-66b59f1b2666">
-
-
-<img width="572" alt="Capture2-addforest+username" src="https://github.com/jaysixco/configure-ad/assets/160427311/8d2b9ec8-889b-4909-ad7f-18e224ec7521">
-
-<img width="574" alt="Capture3-password" src="https://github.com/jaysixco/configure-ad/assets/160427311/6b7d40ee-0b20-4de0-bce2-57e2fdf01a12">
 
 
 
