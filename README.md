@@ -52,7 +52,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 
 <strong> DC-1 </strong>  
 <strong> Install ADDS + setup forest </strong><br>
-<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = Service Manager > 'Add roles and features' <br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = Service Manager > 'Add roles and features' </strong><br>
 <img width="960" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/86f64b1b-abfc-435f-a5ee-8e7135ec307e">
 <br>
 Keep clicking next until you get to "Server Roles" tab (following screen). Click the box next to "Active Directory Domain Services" <br>
@@ -90,7 +90,7 @@ create a password >  <br>
 <br>
 
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
-<strong> Log in to DC-1. Go to Start Menu/Search box and type in "Active Directory" and click "Active Directory Users and Computers (ADUC)" > <br>
+<strong> Log in to DC-1. Go to Start Menu/Search box and type in "Active Directory" and click "Active Directory Users and Computers (ADUC)" > </strong><br>
 <img width="960" alt="Capture - ADUC" src="https://github.com/jaysixco/configure-ad/assets/160427311/b947408d-dde2-4fdd-9b40-57cb426ec615">
 <br>
 
@@ -104,16 +104,16 @@ create a password >  <br>
 <br>
 
 <strong> Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”  </strong><br>
-Possible screenshot
-<br>
-
-<strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Right click '_ADMINS' > New > User <br>
 Possible screenshot
 <br>
 
+<strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
+Possible screenshot
+<br>
+
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click jane_admin > Properties > Member of tab > type domain > Check names > Domain Admins > OK > Apply > OK  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Double click "Admins" > Right click jane_admin > Click "Properties" > Clicck "Member Of" tab > Type "domain" > Click "Check names" > Click "Domain Admins" > Click following sequence: "Ok","Ok","Apply","Ok" <br>
 Possible screenshot
 <br>
 
