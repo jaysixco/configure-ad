@@ -166,40 +166,10 @@ Copy everything (ctrl + A, then ctrl + C) > Go back to Powershell Ise homepage (
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into Client-1 with one of the accounts </strong> (the password is in Powershell Ise (see Powershell homepage screenshot in the rectangle box; the password going to be the same for all acounts) <br>
 <br>
 <strong> Finish. </strong>
-</p>
-<br />
-<p>
-
-</p>
-<p>
-
-</p>
-
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <em>Steps above are accurate. Are able to complete with steps above. All that is left to do is slight formatting.</em>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-
-
-
-
-
-
-
 
 
 
