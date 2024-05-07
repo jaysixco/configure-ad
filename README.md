@@ -125,13 +125,13 @@ Possible screenshot
 
 <strong> CLIENT-1 </strong> <br>
 <strong> Starting in Azure, go to DNS server and make it DC-1's private IP </strong> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   Get DC's Private IP address first (should be 10.0.0.x) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em>   
+&nbsp;&nbsp;&nbsp;&nbsp;   Get DC's Private IP address first <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Click DC-1 > Scroll down until you see "Private IP address" <br>   
 &nbsp;&nbsp;&nbsp;&nbsp;   Go to Client-1 > Networking > Network Interface > DNS servers > Custom > Paste DC-1's Private IP > Save <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Hit restart </strong> so it logs you out of Client-1 remote desktop <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log back in as labuser </strong> (remember, we haven't joined it to any domain yet) <br>
-<strong> Rename the PC (hint: Start > System) as mydomain.com\jane_admin </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   Right click the start button > Systems > Rename this pc (advanced) > Change > Domain > type mydomain.com > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
+<strong> Rename the PC as mydomain.com\jane_admin </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;   Right click the start button >  Click "Systems" > Scroll down > Click "Rename this Pc (advanced)" > Click "Change" > Click circle next to "Domain" > Type "mydomain.com" > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
 <br>
 
 <strong> Remote Desktop for non-administrative users on Client-1 </strong><br>
