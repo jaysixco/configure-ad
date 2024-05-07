@@ -147,17 +147,23 @@ Possible screenshot
 
 <strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Login </strong> to DC-1 as jane_admin <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Open </strong> PowerShell_ise as an administrator (type Powershell in search bar, right click "Windows Powershell ISE" > Click "Run as administrator" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Open </strong> PowerShell_ise as an administrator (type Powershell in search bar, right click "Windows Powershell ISE" > Click "Run as administrator" 
 <br>
-Open link in new tab > Go to raw (screenshot below) <br>
-<em> Insert screenshot here </em>
+<img width="625" alt="Capture - Powershell ISE admin" src="https://github.com/jaysixco/configure-ad/assets/160427311/e3e2aabe-786f-423d-a26c-1869817dcea5">
 <br>
-Copy everything (ctrl + A, then ctrl + C) > Go back to Powershell Ise homepage (screenshot below) > Click New File (screenshot below, letter A)  > Paste (ctrl + V) in white section > Click "Run Script" (screenshot below, green button, letter B)
+Open link in new tab > Go to raw (screenshot below) 
 <br>
-<em> Insert screenshot here </em>
+<img width="960" alt="Capture - Click Raw" src="https://github.com/jaysixco/configure-ad/assets/160427311/0891ba73-964d-4479-bc91-6e08c6055411">
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   When finished, <strong> open </strong> ADUC and <strong> observe </strong> the accounts in the appropriate OU ("_EMPLOYEES") <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into Client-1 with one of the accounts </strong> (take note of the password in the script) <br>
+Copy everything (ctrl + A, then ctrl + C) > Go back to Powershell Ise homepage (screenshot below) > Click New File (screenshot below, letter A)  > Paste (ctrl + V) in white section > Click "Run Script" (screenshot below, green play button, letter B)
+<br>
+<img width="854" alt="Capture - ctrl + V, New Script, Run Script" src="https://github.com/jaysixco/configure-ad/assets/160427311/31f27fbd-6c3b-47b7-8751-682adbb25135">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   When finished, <strong> open </strong> ADUC and <strong> observe </strong> the accounts in the appropriate OU ("_EMPLOYEES") (see screenshot below)
+<br>
+<img width="565" alt="Capture - Users created" src="https://github.com/jaysixco/configure-ad/assets/160427311/352e9fef-cf56-4b6e-8eac-8956c6b9d500">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into Client-1 with one of the accounts </strong> (the password is in Powershell Ise (see Powershell homepage screenshot in the rectangle box; the password going to be the same for all acounts) <br>
 <br>
 <strong> Finish. </strong>
 </p>
