@@ -141,7 +141,8 @@ Possible screenshot
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Add” <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Type </strong>  “domain users” access to remote desktop"<br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> Check Names <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> "OK" > Click "OK" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> "OK" > 
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> "OK" again  >
 <br>
 
 <strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
