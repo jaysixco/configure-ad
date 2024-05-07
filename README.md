@@ -148,6 +148,10 @@ Possible screenshot
 <strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Login </strong> to DC-1 as jane_admin <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Open </strong> PowerShell_ise as an administrator (type Powershell in search bar, right click "Windows Powershell ISE" > Click "Run as administrator" <br>
+<br>
+Open link in new tab > Go to raw > Copy everything (ctrl + A) > Go back to Powershell Ise > Click New File > Paste (ctrl + P) in white section > Click "Run Script" (green button)
+<br>
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Create </strong> a new File and <strong> paste </strong> the contents of the script into it <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <strong>script:</strong> https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Run </strong> the script and observe the accounts being created <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   When finished, <strong> open </strong> ADUC and <strong> observe </strong> the accounts in the appropriate OU <br>
