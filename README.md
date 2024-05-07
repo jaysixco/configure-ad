@@ -113,7 +113,7 @@ Possible screenshot
 <br>
 
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Double click "Admins" > Right click jane_admin > Click "Properties" > Clicck "Member Of" tab > Type "domain" > Click "Check names" > Click "Domain Admins" > Click following sequence: "Ok","Ok","Apply","Ok" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Double click "Admins" > Right click jane_admin > Click "Properties" > Click "Member Of" tab > Type "domain" > Click "Check names" > Click "Domain Admins" > Click following sequence: "Ok","Ok","Apply","Ok" <br>
 Possible screenshot
 <br>
 
