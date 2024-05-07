@@ -135,9 +135,13 @@ Possible screenshot
 <br>
 
 <strong> Remote Desktop for non-administrative users on Client-1 </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into </strong> Client-1 as mydomain.com\jane_admin and open system properties <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into </strong> Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System" <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Remote Desktop” <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Allow </strong> “domain users” access to remote desktop </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Select users that can remotely access this PC” <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Add” <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Type </strong>  “domain users” access to remote desktop"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> Check Names <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> "OK" > Click "OK" <br>
 <br>
 
 <strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
