@@ -163,7 +163,7 @@ Copy everything (ctrl + A, then ctrl + C) > Go back to Powershell Ise homepage (
 <br>
 <img width="565" alt="Capture - Users created" src="https://github.com/jaysixco/configure-ad/assets/160427311/352e9fef-cf56-4b6e-8eac-8956c6b9d500">
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into Client-1 with one of the accounts (just type in the name (ex. bapa.mop), you don't have to put "mydomain.com" first) </strong> (the password is in Powershell Ise (see Powershell homepage screenshot in the rectangle box; the password going to be the same for all acounts) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into Client-1 with one of the accounts (just type in the name (ex. bapa.mop), you don't have to put "mydomain.com" first) </strong> (the password is in Powershell Ise (see Powershell homepage screenshot in the rectangle box; the password going to be the same for all acounts - **Password1**) <br>
 <br>
 <strong> Finish. </strong>
 
