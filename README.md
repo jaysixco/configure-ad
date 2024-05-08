@@ -151,7 +151,7 @@ Possible screenshot
 <br>
 <img width="625" alt="Capture - Powershell ISE admin" src="https://github.com/jaysixco/configure-ad/assets/160427311/e3e2aabe-786f-423d-a26c-1869817dcea5">
 <br>
-Open link in new tab > Go to raw (screenshot below) 
+Open link (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) in new tab > Go to raw (screenshot below) 
 <br>
 <img width="960" alt="Capture - Click Raw" src="https://github.com/jaysixco/configure-ad/assets/160427311/0891ba73-964d-4479-bc91-6e08c6055411">
 <br>
