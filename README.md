@@ -169,7 +169,7 @@ After you click the play button (screenshot above), a bunch of accounts will sta
 <img width="565" alt="Capture - Users created" src="https://github.com/jaysixco/configure-ad/assets/160427311/352e9fef-cf56-4b6e-8eac-8956c6b9d500">
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log in to Client-1 with one of the accounts </strong><br>
+<strong> Log in to Client-1 with one of the accounts </strong><br>
 In the screenshot above, we can see that one of the account names is "bapa.mop" so we will use it for our example. <br>
 Log out of Client-1. Log back in through Remote Desktop. Click //"Use a different account"// (see first screenshot)
 The username is "bapa.mop" (no "mydomain.com" required). 
