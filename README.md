@@ -164,16 +164,16 @@ Click the green play button to run the script (screenshot below, letter B)
 <br>
 <img width="854" alt="Capture - ctrl + V, New Script, Run Script" src="https://github.com/jaysixco/configure-ad/assets/160427311/31f27fbd-6c3b-47b7-8751-682adbb25135">
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  After you click the play button, a bunch of accounts will start generating in the "_EMPLOYEES" organization unit (see screenshot below)
+After you click the play button (screenshot above), a bunch of accounts will start generating in the "_EMPLOYEES" organization unit (see screenshot below)
 <br>
 <img width="565" alt="Capture - Users created" src="https://github.com/jaysixco/configure-ad/assets/160427311/352e9fef-cf56-4b6e-8eac-8956c6b9d500">
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log in to Client-1 with one of the accounts </strong><br>
 In the screenshot above, we can see that one of the account names is "bapa.mop" so we will use it for our example. <br>
-//Extra steps necessary to determine 
+Log out of Client-1. Log back in through Remote Desktop. Click //"Use a different account"// (see first screenshot)
 The username is "bapa.mop" (no "mydomain.com" required). 
-The password is "Password1" because of the script- **Password1**) <br>
+If you noticed, because of the script all the accounts have the same password as password (see screenshot above<br>
 <br>
 <strong> Finish. </strong>
 
