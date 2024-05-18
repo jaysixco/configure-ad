@@ -39,12 +39,17 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <p>
 <strong> SUMMARY (in my own words):</strong>  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em> <br>
-<strong> Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) (Use the same Resource Group and Vnet ) </strong><br>
-<strong> Change DC-1 NIC to static </strong><br> 
-&nbsp;&nbsp;&nbsp;&nbsp;  DC-1 > In the sidebar under "Networking" click "Network settings" > click IP configurations > scroll down and click ipconfig > click static > Save <br> 
+<strong> Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) (Use the same Resource Group and Vnet )</strong>
+
+  
+<strong> Change DC-1 NIC to static </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  DC-1 > In the sidebar under "Networking" click "Network settings" > click IP configurations > scroll down and click ipconfig > click static > Save
+
+
 <strong> Login to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Enable - Start menu > type firewall > click option with 'Advanced Security' > Inbound Rules > widen screen so you can see Protocol tab > 
-&nbsp;&nbsp;&nbsp;&nbsp;  right click ICMPv4EchoRequests > Enable rule (there's two enable both of them in turn) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  right click ICMPv4EchoRequests > Enable rule (there's two enable both of them in turn)
+
 <strong> Login to Client-1 and ping DC-1 to see if it worked  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em>
 <img width="960" alt="ping worked" src="https://github.com/jaysixco/configure-ad/assets/160427311/59817a5c-d136-4890-886b-a99891dec9b4">
@@ -55,7 +60,7 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = Service Manager > 'Add roles and features' </strong><br>
 <img width="960" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/86f64b1b-abfc-435f-a5ee-8e7135ec307e">
 <br>
-Keep clicking next until you get to "Server Roles" tab (following screen). Click the box next to "Active Directory Domain Services" <br>
+Keep clicking "Next>" button until you get to "Server Roles" tab (following screen). Click the box next to "Active Directory Domain Services" <br>
 <img width="588" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/828837cc-8ec0-47f0-b7fc-2af4be09d846">
 <br>
 After you click the box next to "Active Directory Domain Services", this box will pop up (see screenshot below). Just click "Add Features" <br>
@@ -64,7 +69,7 @@ After you click the box next to "Active Directory Domain Services", this box wil
 After that, just keep clicking "Next" until you get to the "Features" tab (<em>add screenshot later</em>) Click Install. Then after it installs, click "Close".
 <br>
 <br>
-<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a <br> &nbsp;&nbsp;&nbsp;&nbsp;  flag and a triangle with an exclamation point in it, click it > <br> 
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a flag and a triangle with an exclamation point in it, click it > <br> 
 <img width="960" alt="Capture-flagexclamation" src="https://github.com/jaysixco/configure-ad/assets/160427311/332bade1-9d4a-4ca8-b582-a198b17bfb73">
 >
 
@@ -75,17 +80,17 @@ Promote > <br>
 <br>
 
 
-Add a new forest > mydomain.com ><br>
+Click "Add a new forest" and type "mydomain.com" ><br>
 <img width="572" alt="Capture2-addforest+username" src="https://github.com/jaysixco/configure-ad/assets/160427311/e043bf1e-0909-4b6f-acc0-6b3faf4153cc">
 
 
 <br>
 
-create a password >  <br>
+Create a password >  <br>
 <img width="574" alt="Capture3-password" src="https://github.com/jaysixco/configure-ad/assets/160427311/a3c31e70-009d-47b6-b403-d16e0daf85e6">
 
 <br>
-<strong> Keep clicking next until you can't anymore. Then click Install. Wait. After it installs, it will automatically log you out. </strong><br>
+<strong> Keep clicking "Next>" button until you can't anymore. Then click "Install" button. Wait. After it installs, it will automatically log you out. </strong><br>
 <strong> If you try to log back in with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser).  </strong><br>
 <br>
 
