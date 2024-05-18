@@ -148,9 +148,8 @@ Possible screenshot
 
 <strong> Create a bunch of additional users and attempt to log into Client-1 with one of the users </strong><br>
 1) Log in to DC-1 as jane_admin (see screenshot)
-2) Open PowerShell_ise as an administrator (type Powershell in start menu search bar, right click "Windows Powershell ISE" > Click "Run as administrator" 
-<br>
-   //Get a better screenshot
+2) Open PowerShell_ise as an administrator (type Powershell in start menu search bar, right click "Windows Powershell ISE" > Click "Run as administrator" <br>
+   //Get a better screenshot <br> 
    //Put a rectangle around start menu search bar, circle with arrow pointing to "Windows Powershell ISE", and have the screenshot capture "Run as administrator" as well
 <img width="625" alt="Capture - Powershell ISE admin" src="https://github.com/jaysixco/configure-ad/assets/160427311/e3e2aabe-786f-423d-a26c-1869817dcea5">
 <br>
