@@ -95,22 +95,21 @@ Create a password >  <br>
 <br>
 
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
-<strong> Log in to DC-1. Go to Start Menu/Search box and type in "Active Directory" and click "Active Directory Users and Computers (ADUC)" > </strong><br>
+<strong> Log in to DC-1. Type "Active Directory"in Start Menu search box (//edit screenshot later, put red rectangle around the start menu search box and Active Dicrectory//) and click "Active Directory Users and Computers (ADUC)" > </strong><br>
 <img width="960" alt="Capture - ADUC" src="https://github.com/jaysixco/configure-ad/assets/160427311/b947408d-dde2-4fdd-9b40-57cb426ec615">
 <br>
 
 <strong> Create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > (Underscore not mandatory in '_EMPLOYEES', but done for the lab) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click "mydomain.com" > Hover mouse over "New" > Click "Organizational Unit" > (Underscore not mandatory in '_EMPLOYEES', but done for the lab) <br>
 <img width="565" alt="Capture - OU" src="https://github.com/jaysixco/configure-ad/assets/160427311/d7c7cb8d-4d7c-40f7-bdd2-12d5f3374e75">
 <br>
 
 <strong> Create a new OU named “_ADMINS”  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click mydomain.com > New > Organizational Unit > type "_ADMINS" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  Right click "mydomain.com" > New > Organizational Unit > type "_ADMINS" <br>
 <br>
 
 <strong> Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Right click '_ADMINS' > New > User <br>
-Possible screenshot
 <br>
 
 <strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
@@ -118,15 +117,14 @@ Possible screenshot
 <br>
 
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Double click "Admins" > Right click jane_admin > Click "Properties" > Click "Member Of" tab > Type "domain" > Click "Check names" > Click "Domain Admins" > Click following sequence: "Ok","Ok","Apply","Ok" <br>
-Possible screenshot
+&nbsp;&nbsp;&nbsp;&nbsp;  Double click "Admins" > Right click "jane_admin" > Click "Properties" > Click "Member Of" tab > Type "domain" > Click "Check names" > Click "Domain Admins" > Click following button sequence: "Ok","Ok","Apply","Ok" <br>
 <br>
 
-<strong> Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”  </strong><br>
-<strong> User jane_admin as your admin account from now on  </strong><br>
-<br>
+<strong> Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”  </strong>
+
+<strong> Use jane_admin as your admin account from now on  </strong>
+
 <strong> Now we'll be dealing with Client-1  </strong><br>
-<br>
 
 <strong> CLIENT-1 </strong> <br>
 <strong> Starting in Azure, go to DNS server and make it DC-1's private IP </strong> <br>
@@ -134,41 +132,49 @@ Possible screenshot
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Click DC-1 > Scroll down until you see "Private IP address" <br>   
 &nbsp;&nbsp;&nbsp;&nbsp;   Go to Client-1 > Networking > Network Interface > DNS servers > Custom > Paste DC-1's Private IP > Save <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Hit restart </strong> so it logs you out of Client-1 remote desktop <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log back in as labuser </strong> (remember, we haven't joined it to any domain yet) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log back in as labuser </strong> (remember, we haven't joined it to any domain yet)
+
 <strong> Rename the PC as mydomain.com\jane_admin </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;   Right click the start button >  Click "Systems" > Scroll down > Click "Rename this Pc (advanced)" > Click "Change" > Click circle next to "Domain" > Type "mydomain.com" > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
 <br>
 
-<strong> Remote Desktop for non-administrative users on Client-1 </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into </strong> Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System" <br>
+<strong> Remote Desktop for non-administrative users on Client-1 </strong> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into </strong> Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System") (see screenshot) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Remote Desktop” <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Select users that can remotely access this PC” <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Add” <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Type </strong>  “domain users” access to remote desktop"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> Check Names <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> "OK" > 
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> "OK" again  >
-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Type </strong>  “domain users”, click </strong> "Check Names", then click "Ok" (see first screenshot). On the page after that, click "OK" as well (see second screenshot) 
+//Put the screenshots side by side
 
-<strong> Create a bunch of additional users and attempt to log into client-1 with one of the users </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Login </strong> to DC-1 as jane_admin <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Open </strong> PowerShell_ise as an administrator (type Powershell in search bar, right click "Windows Powershell ISE" > Click "Run as administrator" 
+<strong> Create a bunch of additional users and attempt to log into Client-1 with one of the users </strong><br>
+1) Log in to DC-1 as jane_admin (see screenshot)
+2) Open PowerShell_ise as an administrator (type Powershell in start menu search bar, right click "Windows Powershell ISE" > Click "Run as administrator" 
 <br>
+   //Get a better screenshot
+   //Put a rectangle around start menu search bar, circle with arrow pointing to "Windows Powershell ISE", and have the screenshot capture "Run as administrator" as well
 <img width="625" alt="Capture - Powershell ISE admin" src="https://github.com/jaysixco/configure-ad/assets/160427311/e3e2aabe-786f-423d-a26c-1869817dcea5">
 <br>
-Open link (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) in new tab > Go to raw (screenshot below) 
+Open link (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) in a new tab then click "Raw" (screenshot below) 
 <br>
 <img width="960" alt="Capture - Click Raw" src="https://github.com/jaysixco/configure-ad/assets/160427311/0891ba73-964d-4479-bc91-6e08c6055411">
 <br>
-Copy everything (ctrl + A, then ctrl + C) > Go back to Powershell Ise homepage (screenshot below) > Click New File (screenshot below, letter A)  > Paste (ctrl + V) in white section > Click "Run Script" (screenshot below, green play button, letter B)
+Copy all the "Raw" content (ctrl + A, then ctrl + C), then go back to the Powershell Ise homepage (see screenshot below). <br>
+Click "New File" (screenshot below, letter A). <br>
+Click anywhere in the white section and press "ctrl + V" to Paste. <br>
+Click the green play button to run the script (screenshot below, letter B)
 <br>
 <img width="854" alt="Capture - ctrl + V, New Script, Run Script" src="https://github.com/jaysixco/configure-ad/assets/160427311/31f27fbd-6c3b-47b7-8751-682adbb25135">
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   When finished, <strong> open </strong> ADUC and <strong> observe </strong> the accounts in the appropriate OU ("_EMPLOYEES") (see screenshot below)
+&nbsp;&nbsp;&nbsp;&nbsp;  After you click the play button, a bunch of accounts will start generating in the "_EMPLOYEES" organization unit (see screenshot below)
 <br>
 <img width="565" alt="Capture - Users created" src="https://github.com/jaysixco/configure-ad/assets/160427311/352e9fef-cf56-4b6e-8eac-8956c6b9d500">
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into Client-1 with one of the accounts (just type in the name (ex. bapa.mop), you don't have to put "mydomain.com" first) </strong> (the password is in Powershell Ise (see Powershell homepage screenshot in the rectangle box; the password going to be the same for all acounts - **Password1**) <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log in to Client-1 with one of the accounts </strong><br>
+In the screenshot above, we can see that one of the account names is "bapa.mop" so we will use it for our example. <br>
+//Extra steps necessary to determine 
+The username is "bapa.mop" (no "mydomain.com" required). 
+The password is "Password1" because of the script- **Password1**) <br>
 <br>
 <strong> Finish. </strong>
 
