@@ -67,8 +67,17 @@ Windows 10 - DO check the box under Licensing
 <img width="785" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/519678c6-983a-4b4e-b652-9f4303db229e"> <br>
 
 
-<strong> Log in to Client-1 and ping DC-1 to see if it worked  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em>
+<strong> Log in to Client-1 and ping DC-1's private IP address to see if it worked  </strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP <br>
+1) Start at Virtual Machines homepage <br>
+2) Right click name of Window's 2022 VM and open it in a new tab <br>
+3) Scroll down <br>
+4) Under header called "Networking" you will see a number next to "Private IP address" <br>
+5) Copy that number <br>
+6) Remote Desktop your way into Client-1 <br>
+7) Open command prompt <br>
+8) Type "ping" and then paste the Private IP address you copied <br>
+9) If it worked, you should see the word "Reply" repeated a few times like this: </em> <br>
 <img width="960" alt="ping worked" src="https://github.com/jaysixco/configure-ad/assets/160427311/59817a5c-d136-4890-886b-a99891dec9b4">
 
 
