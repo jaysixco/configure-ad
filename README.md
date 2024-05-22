@@ -96,14 +96,8 @@ After that, just keep clicking "Next" until you get to the "Confirmation" tab (s
 <img width="590" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/b01ac33d-db0d-4c71-8f96-71d3caae2362">
 <br>
 <br>
-<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a flag and a triangle with an exclamation point in it, click it > <br> 
-<img width="960" alt="Capture-flagexclamation" src="https://github.com/jaysixco/configure-ad/assets/160427311/332bade1-9d4a-4ca8-b582-a198b17bfb73">
->
-
-<br>
-
-Promote > <br>
-<img width="960" alt="Capture1-promote" src="https://github.com/jaysixco/configure-ad/assets/160427311/781927ea-eb90-4e9b-a39c-d1c089470f88">
+<strong> Set up new forest </strong> = On the Service manager page, click the flag and triangle with an exclamation point  in it (1), then click "Promote this server to a domain controller"(2)> <br> 
+<img width="956" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/02c4c4b6-160d-4a81-813e-83bebf39c861">
 <br>
 
 
@@ -117,7 +111,7 @@ Create a password >  <br>
 <img width="574" alt="Capture3-password" src="https://github.com/jaysixco/configure-ad/assets/160427311/a3c31e70-009d-47b6-b403-d16e0daf85e6">
 
 <br>
-<strong> Keep clicking "Next>" button until you can't anymore. Then click "Install" button. Wait. After it installs, it will automatically log you out. </strong><br>
+<strong> Keep clicking "Next>" button until you get to the "Prerequisites Check" page. Then click "Install" button. After it installs, it will automatically log you out. </strong><br>
 <strong> If you try to log back in with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser).  </strong><br>
 <br>
 
