@@ -81,7 +81,7 @@ Windows 10 - DO check the box under Licensing
 <img width="960" alt="ping worked" src="https://github.com/jaysixco/configure-ad/assets/160427311/59817a5c-d136-4890-886b-a99891dec9b4">
 
 
-<strong> DC-1 </strong>  
+<strong> DC-1 (windows 2022 VM) </strong>  
 <strong> Install ADDS + setup forest </strong><br>
 <strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = On the Service Manager page, click "Add roles and features" </strong><br>
 <img width="960" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/86f64b1b-abfc-435f-a5ee-8e7135ec307e">
@@ -147,7 +147,7 @@ Possible screenshot
 
 <strong> Now we'll be dealing with Client-1  </strong><br>
 
-<strong> CLIENT-1 </strong> <br>
+<strong> CLIENT-1 (windows 10 VM) </strong> <br>
 <strong> Starting in Azure, go to DNS server and make it DC-1's private IP </strong> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   Get DC's Private IP address first <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Click DC-1 > Scroll down until you see "Private IP address" <br>   
