@@ -210,12 +210,12 @@ Create a password >  <br>
 <br>
 
 <strong> Remote Desktop for non-administrative users on Client-1 </strong> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Remote Desktop your way back in to </strong> Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System") (see screenshot) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Remote Desktop” <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Select users that can remotely access this PC” <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Add” <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Type </strong>  “domain users”, click </strong> "Check Names", then click "Ok" (see first screenshot). On the page after that, click "OK" as well (see second screenshot) 
-//Put the screenshots side by side
+1) Remote Desktop your way back in to Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System") <br>
+2) Click “Remote Desktop” <br>
+3) Click “Select users that can remotely access this PC” <br>
+4) Click “Add” <br>
+5) Type “domain users”, click </strong> "Check Names"
+6) There might be a popup asking for credentials. Just type "mydomain.com\jane_admin" for the username and whatever password you created then click "Ok". On the page after that, click "OK" as well.
 
 <strong> Create a bunch of additional users and attempt to log into Client-1 with one of the users </strong><br>
 1) Log in to DC-1 as jane_admin (see screenshot)
