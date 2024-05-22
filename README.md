@@ -170,7 +170,7 @@ Create a password >  <br>
 
 <strong> Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”  </strong>
 1) Open command prompt (type "cmd" in Start menu)
-2) Type "logoff" to log out
+2) Type "logoff" and then press enter to log out
 3) Copy DC-1's Public IP address, if you don't have it already <br>
 4) Open Remote Desktop Login page (type "Remote Desktop" in Start menu <br>
 5) Paste the Public IP address, then click enter.
@@ -185,12 +185,25 @@ Create a password >  <br>
 <strong> Starting in Azure, go to DNS server and make it DC-1's private IP </strong> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   Get DC's Private IP address first <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Click DC-1 > Scroll down until you see "Private IP address" <br>   
-&nbsp;&nbsp;&nbsp;&nbsp;   Go to Client-1 > Networking > Network Interface > DNS servers > Custom > Paste DC-1's Private IP > Save <br>
+1) Go to Client-1 <br>
+2) Networking <br>
+3) Network Interface <br>
+4) DNS servers <br>
+5) Custom <br>
+6) Paste DC-1's Private IP <br>
+7) Save <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Hit restart </strong> so it logs you out of Client-1 remote desktop <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log back in as labuser </strong> (remember, we haven't joined it to any domain yet)
 
 <strong> Rename the PC as mydomain.com\jane_admin </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;   Right click the start button >  Click "Systems" > Scroll down > Click "Rename this Pc (advanced)" > Click "Change" > Click circle next to "Domain" > Type "mydomain.com" > then, username:mydomain.com\jane_admin + password:J~S~2 <br>
+1) ight click the start button <br>
+2) Click "Systems" <br>
+3) Scroll down <br>
+4) Click "Rename this Pc (advanced)" <br>
+5) Click "Change" <br>
+6) Click circle next to "Domain" <br>
+7) Type "mydomain.com" <br>
+8) then, username:mydomain.com\jane_admin + password:J~S~2 <br>
 <br>
 
 <strong> Remote Desktop for non-administrative users on Client-1 </strong> <br>
