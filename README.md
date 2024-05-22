@@ -192,22 +192,25 @@ Create a password >  <br>
 5) Click "DNS servers" (1), click "Custom" (2), paste DC-1's (2022 VM) private IP address in the box (3), and then click "Save"<br>
 ![3](https://github.com/jaysixco/configure-ad/assets/160427311/c71b4a54-869e-4571-9a36-6ef2d729992b)
 
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Hit restart </strong> so it logs you out of Client-1 remote desktop <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log back in as labuser </strong> (remember, we haven't joined it to any domain yet)
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Go to Client-1 (Windows 10 VM) page and hit restart. Wait until it says the VM has been successfully restarted. </strong> <br>
 
-<strong> Rename the PC as mydomain.com\jane_admin </strong><br>
-1) ight click the start button <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Now, log back in through Remote Desktop as labuser </strong> (remember, we haven't joined it to any domain yet)
+
+<strong> In Client-1 (Window 10 VM) rename the PC as mydomain.com\jane_admin </strong><br>
+1) Right click the start button <br>
 2) Click "Systems" <br>
 3) Scroll down <br>
-4) Click "Rename this Pc (advanced)" <br>
+4) Click "Rename this PC (advanced)" <br>
 5) Click "Change" <br>
 6) Click circle next to "Domain" <br>
-7) Type "mydomain.com" <br>
-8) then, username:mydomain.com\jane_admin + password:J~S~2 <br>
+7) Type "mydomain.com" and click "Ok" <br>
+8) Then in the page that appears type for username:"mydomain.com\jane_admin" and whatever password you want (should probably use the same password you've been using for other parts) <br>
+9) A box will pop up telling you that you must restart Client-1 Vm in order to apply the changes. Just click "Ok".
+10) There should also be a pop-up (you might have to minimize other screens to see it) that asks if you want to Restart Now or Later. Click the button that says "Restart Now"
 <br>
 
 <strong> Remote Desktop for non-administrative users on Client-1 </strong> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log into </strong> Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System") (see screenshot) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   <strong> Remote Desktop your way back in to </strong> Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System") (see screenshot) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Remote Desktop” <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Select users that can remotely access this PC” <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Click </strong> “Add” <br>
