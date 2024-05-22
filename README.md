@@ -188,9 +188,9 @@ Create a password >  <br>
 1) Go to Azure's Virtual machine page
 2) Right click Client-1 (window 10 Vm) and open it in a new tab
 3) Under "Networking" on left hand side, click "Network settings" (1) and then Click "Network Interface" (2) <br>
-(insert ss 2, actual comp)
+![2](https://github.com/jaysixco/configure-ad/assets/160427311/3ea657a0-0262-47fc-932f-be8243511f63)
 5) Click "DNS servers" (1), click "Custom" (2), paste DC-1's (2022 VM) private IP address in the box (3), and then click "Save"<br>
-(insert ss 3, act. comp)
+![3](https://github.com/jaysixco/configure-ad/assets/160427311/c71b4a54-869e-4571-9a36-6ef2d729992b)
 
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Hit restart </strong> so it logs you out of Client-1 remote desktop <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log back in as labuser </strong> (remember, we haven't joined it to any domain yet)
