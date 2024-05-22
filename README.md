@@ -47,7 +47,7 @@ Windows 10 - DO check the box under Licensing
 <strong> Change DC-1 NIC to static </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  1) Go to the Virtual Machine's page <br>
 2) Right click the name of your Windows 2022 DC-1 and open it in a new tab <br>
-3) In the sidebar under "Networking" click "Network settings" (1) and then Click "IP configurations" (2) > <br>
+3) In the sidebar under "Networking" click "Network settings" (1) and then Click "IP configurations" (2) <br>
 ![1 - put 2 red recs](https://github.com/jaysixco/configure-ad/assets/160427311/cdf031c9-aded-4db5-a705-ea40688a515c)
 <br>
 4) Scroll down and click "ipconfig1" (1), then click "Static" (2), and then click "Save" (3) <br>
@@ -56,8 +56,14 @@ Windows 10 - DO check the box under Licensing
 
 
 <strong> Login to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Enable - Start menu > type firewall > click option with 'Advanced Security' > Inbound Rules > widen screen so you can see Protocol tab > 
-&nbsp;&nbsp;&nbsp;&nbsp;  right click ICMPv4EchoRequests > Enable rule (there's two enable both of them in turn)
+1) Enable <br>
+2) Start menu <br>
+3) Type firewall <br>
+4) Click option with 'Advanced Security' <br>
+5) Inbound Rules <br>
+6) Widen screen so you can see Protocol tab <br>
+7) Right click ICMPv4EchoRequests <br>
+8) Enable rule (there's two enable both of them in turn)
 
 <strong> Login to Client-1 and ping DC-1 to see if it worked  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em>
