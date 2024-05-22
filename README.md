@@ -60,11 +60,12 @@ Windows 10 - DO check the box under Licensing
 - (copy and paste the instructions from monitoring traffic draft)
 2) Type "firewall" in the start menu search bar
 3) Click option with 'Advanced Security' <br>
-(in ss 1)
+<img width="960" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/6da63887-66cf-4881-a468-91e719fd54ea"> <br>
 4) Click "Inbound Rules" (1), then scroll right until you are able see and click the "Protocol" tab (2) <br>
-(insert screenshot 2)
+<img width="785" alt="2" src="https://github.com/jaysixco/configure-ad/assets/160427311/1d8d84fc-7469-443f-942b-c57e986095c2"> <br>
 5) Scroll back to the left and, while holding down the Shift key on your keyboard, click these two "Core Networking Diagnostics" (1), then click "Enable Rule" (2) <br>
-(insert screenshot 3)
+<img width="785" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/519678c6-983a-4b4e-b652-9f4303db229e"> <br>
+
 
 <strong> Log in to Client-1 and ping DC-1 to see if it worked  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em>
