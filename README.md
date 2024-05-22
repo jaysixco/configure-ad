@@ -118,7 +118,7 @@ Create a password >  <br>
 3) Open Remote Desktop Login page <br>
 4) Paste the Public IP address, then click enter.
 5) Click "More choices", then click "Use a different account"<br>
-5) For the username, type "mydomain.com\labuser and type the same password you created for this VM <br>
+5) For the username, type "mydomain.com\labuser and type the same password you created for the VM <br>
 <br>
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
 1) Now that you're in to DC-1 (window 2022 VM), type "Active Directory"in Start Menu search box (1) and then cllick "Active Directory Users and Computers (ADUC)" (2) <br>
@@ -149,11 +149,11 @@ Create a password >  <br>
 <img width="328" alt="2" src="https://github.com/jaysixco/configure-ad/assets/160427311/a4dbca4e-232c-4eff-85d5-a45d56602ab3"> <br>
 3) Create a password (you can use the same one that you created for the VMs)
 4) Make sure the only box that is checked is "Password never expires", then click "Next>" <br>
-<img width="328" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/aecf2c58-f81b-4e18-8193-6616a8bb248c">
+<img width="328" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/aecf2c58-f81b-4e18-8193-6616a8bb248c"> <br>
+5) On the page after this, click "Finish"<br>
 <br>
 
 <strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
-Possible screenshot
 <br>
 
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
@@ -161,13 +161,21 @@ Possible screenshot
 2) Right click "jane_admin" <br>
 3) Click "Properties" <br>
 4) Click "Member Of" tab <br>
-5) Type "domain" <br>
-6) Click "Check names" <br>
-7) Click "Domain Admins" <br>
-8) Click following button sequence: "Ok","Ok","Apply","Ok" <br>
+5) Click "Add"
+6) Type "domain" <br>
+7) Click "Check names" <br>
+8) Click "Domain Admins" <br>
+9) Click following button sequence: "Ok","Ok","Apply","Ok" <br>
 <br>
 
 <strong> Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”  </strong>
+1) Open command prompt (type "cmd" in Start menu)
+2) Type "logoff" to log out
+3) Copy DC-1's Public IP address, if you don't have it already <br>
+4) Open Remote Desktop Login page (type "Remote Desktop" in Start menu <br>
+5) Paste the Public IP address, then click enter.
+6) Click "More choices", then click "Use a different account"<br>
+5) For the username, type "mydomain.com\jane_admin" and type the same password you created for the VM <br>
 
 <strong> Use jane_admin as your admin account from now on  </strong>
 
