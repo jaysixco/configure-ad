@@ -83,7 +83,7 @@ Windows 10 - DO check the box under Licensing
 
 <strong> DC-1 </strong>  
 <strong> Install ADDS + setup forest </strong><br>
-<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = Service Manager > 'Add roles and features' </strong><br>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = On the Service Manager page, click "Add roles and features" </strong><br>
 <img width="960" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/86f64b1b-abfc-435f-a5ee-8e7135ec307e">
 <br>
 Keep clicking "Next>" button until you get to "Server Roles" tab (following screen). Click the box next to "Active Directory Domain Services" <br>
@@ -92,7 +92,8 @@ Keep clicking "Next>" button until you get to "Server Roles" tab (following scre
 After you click the box next to "Active Directory Domain Services", this box will pop up (see screenshot below). Just click "Add Features" <br>
 <img width="313" alt="Capture - Add Features" src="https://github.com/jaysixco/configure-ad/assets/160427311/5d63572e-eeb2-4df5-8d3f-d7c03914a40a">
 <br>
-After that, just keep clicking "Next" until you get to the "Features" tab (<em>add screenshot later</em>) Click Install. Then after it installs, click "Close".
+After that, just keep clicking "Next" until you get to the "Confirmation" tab (see screenshot). Click "Install". Then after it installs, click "Close". <br>
+<img width="590" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/b01ac33d-db0d-4c71-8f96-71d3caae2362">
 <br>
 <br>
 <strong>&nbsp;&nbsp;&nbsp;&nbsp;   Set up new forest </strong> = Service manager > look at upper right on the left side of the word 'manage'; should see what looks like a flag and a triangle with an exclamation point in it, click it > <br> 
