@@ -55,17 +55,18 @@ Windows 10 - DO check the box under Licensing
 
 
 
-<strong> Login to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
-1) Enable <br>
-2) Start menu <br>
-3) Type firewall <br>
-4) Click option with 'Advanced Security' <br>
-5) Inbound Rules <br>
-6) Widen screen so you can see Protocol tab <br>
-7) Right click ICMPv4EchoRequests <br>
-8) Enable rule (there's two enable both of them in turn)
+<strong> Log in to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
+1) Log in to Windows 2022 VM through Remote Desktop <br>
+- (copy and paste the instructions from monitoring traffic draft)
+2) Type "firewall" in the start menu search bar
+3) Click option with 'Advanced Security' <br>
+(in ss 1)
+4) Click "Inbound Rules" (1), then scroll right until you are able see and click the "Protocol" tab (2) <br>
+(insert screenshot 2)
+5) Scroll back to the left and, while holding down the Shift key on your keyboard, click these two "Core Networking Diagnostics" (1), then click "Enable Rule" (2) <br>
+(insert screenshot 3)
 
-<strong> Login to Client-1 and ping DC-1 to see if it worked  </strong><br>
+<strong> Log in to Client-1 and ping DC-1 to see if it worked  </strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em>
 <img width="960" alt="ping worked" src="https://github.com/jaysixco/configure-ad/assets/160427311/59817a5c-d136-4890-886b-a99891dec9b4">
 
