@@ -185,13 +185,15 @@ Create a password >  <br>
 <strong> Starting in Azure, go to DNS server and make it DC-1's private IP </strong> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   Get DC's Private IP address first <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Click DC-1 > Scroll down until you see "Private IP address" <br>   
-1) Go to Client-1 <br>
-2) Networking <br>
-3) Network Interface <br>
-4) DNS servers <br>
-5) Custom <br>
-6) Paste DC-1's Private IP <br>
-7) Save <br>
+1) Go to Azure's Virtual machine page
+2) Right click Client-1 (window 10 Vm) and open it in a new tab
+3) Under "Networking" on left hand side, click "Network settings" (1) and then Click "Network Interface" (2) <br>
+(insert ss 2, actual comp)
+5) Click "DNS servers" <br>
+6) Custom <br>
+7) Paste DC-1's Private IP <br>
+8) Save <br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Hit restart </strong> so it logs you out of Client-1 remote desktop <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log back in as labuser </strong> (remember, we haven't joined it to any domain yet)
 
