@@ -112,7 +112,7 @@ Create a password >  <br>
 
 <br>
 <strong> Keep clicking "Next>" button until you get to the "Prerequisites Check" page. Then click "Install" button. After it installs, it will automatically log you out. </strong><br>
-<strong> If you try to log back in with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser).  </strong><br>
+<strong> If you try to log back in to DC-1 (Windows 2022 VM) with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser).  </strong><br>
 <br>
 
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
