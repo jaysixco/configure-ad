@@ -126,16 +126,23 @@ Create a password >  <br>
 <br>
 
 <strong> Create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click "mydomain.com" > Hover mouse over "New" > Click "Organizational Unit" > (Underscore not mandatory in '_EMPLOYEES', but done for the lab) <br>
+1) Right click "mydomain.com" <br>
+2) Hover mouse over "New" <br>
+3) Click "Organizational Unit"
+4) Type "_EMPLOYEES" (Underscore not mandatory in '_EMPLOYEES') <br>
 <img width="565" alt="Capture - OU" src="https://github.com/jaysixco/configure-ad/assets/160427311/d7c7cb8d-4d7c-40f7-bdd2-12d5f3374e75">
 <br>
 
 <strong> Create a new OU named “_ADMINS”  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click "mydomain.com" > New > Organizational Unit > type "_ADMINS" <br>
+1) Right click "mydomain.com" <br>
+2) New > Organizational Unit <br>
+3) type "_ADMINS" <br>
 <br>
 
 <strong> Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Right click '_ADMINS' > New > User <br>
+1) Right click '_ADMINS' <br>
+2) New <br>
+3) User <br>
 <br>
 
 <strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
@@ -143,7 +150,14 @@ Possible screenshot
 <br>
 
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Double click "Admins" > Right click "jane_admin" > Click "Properties" > Click "Member Of" tab > Type "domain" > Click "Check names" > Click "Domain Admins" > Click following button sequence: "Ok","Ok","Apply","Ok" <br>
+1) Double click "Admins" <br>
+2) Right click "jane_admin" <br>
+3) Click "Properties" <br>
+4) Click "Member Of" tab <br>
+5) Type "domain" <br>
+6) Click "Check names" <br>
+7) Click "Domain Admins" <br>
+8) Click following button sequence: "Ok","Ok","Apply","Ok" <br>
 <br>
 
 <strong> Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”  </strong>
