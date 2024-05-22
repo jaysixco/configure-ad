@@ -242,10 +242,12 @@ Create a password >  <br>
 <br>
 
 <strong> Log in to Client-1 with one of the accounts </strong><br>
-In the screenshot above, we can see that one of the account names is "bapa.mop" so we will use it for our example. <br>
-Log out of Client-1. Log back in through Remote Desktop. Click //"Use a different account"// (see first screenshot)
-The username is "bapa.mop" (no "mydomain.com" required). 
-If you noticed, because of the script all the accounts have the same password as password (see screenshot above<br>
+<em> In the screenshot above, we can see that one of the account names is "bapa.mop" so we will use it for our example. </em><br>
+1) Log out of Client-1 (open command prompt, type "logoff", then press enter)
+2) Log back in with Client-1's public IP address through Remote Desktop.
+3) Click "Use a different account"
+4) The username is "bapa.mop" (no "mydomain.com" required). 
+If you noticed, because of the script all the accounts have the same password as password (see screenshot above)<br>
 <br>
 <strong> Finish. </strong>
 
