@@ -189,10 +189,8 @@ Create a password >  <br>
 2) Right click Client-1 (window 10 Vm) and open it in a new tab
 3) Under "Networking" on left hand side, click "Network settings" (1) and then Click "Network Interface" (2) <br>
 (insert ss 2, actual comp)
-5) Click "DNS servers" <br>
-6) Custom <br>
-7) Paste DC-1's Private IP <br>
-8) Save <br>
+5) Click "DNS servers" (1), click "Custom" (2), paste DC-1's (2022 VM) private IP address in the box (3), and then click "Save"<br>
+(insert ss 3, act. comp)
 
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Hit restart </strong> so it logs you out of Client-1 remote desktop <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Log back in as labuser </strong> (remember, we haven't joined it to any domain yet)
