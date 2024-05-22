@@ -140,9 +140,16 @@ Create a password >  <br>
 <br>
 
 <strong> Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”  </strong><br>
-1) Right click '_ADMINS' <br>
-2) New <br>
-3) User <br>
+1) Right click '_ADMINS', hover mouse over "New", then click "User" <br>
+<img width="565" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/bbf620b3-088d-43f6-ac1c-660895940107"> <br>
+2) For "First name:" type "Jane" <br>
+   For "Last name:" type "Doe" <br>
+   For "User logon name:" Type "jane_admin"
+   Then click "Next>" button<br>
+<img width="328" alt="2" src="https://github.com/jaysixco/configure-ad/assets/160427311/a4dbca4e-232c-4eff-85d5-a45d56602ab3"> <br>
+3) Create a password (you can use the same one that you created for the VMs)
+4) Make sure the only box that is checked is "Password never expires", then click "Next>" <br>
+<img width="328" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/aecf2c58-f81b-4e18-8193-6616a8bb248c">
 <br>
 
 <strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
