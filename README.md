@@ -113,15 +113,15 @@ Create a password >  <br>
 <br>
 <strong> Keep clicking "Next>" button until you get to the "Prerequisites Check" page. Then click "Install" button. After it installs, it will automatically log you out. </strong><br>
 <strong> <em>If you try to log back in to DC-1 (Windows 2022 VM) with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser). </em></strong><br>
-1) Start at DC-1 (Window 2022 VM) homepage 
-2) Copy the Public IP address
-3) Open Remote Desktop Login page
-4) Paste the Public IP address, then click enter. You will see this page. Click "More choices" (1), then click "Use a different account" (2) <br>
- <br>
-5) For the username, type "mydomain.com\labuser and type the same password you created for this VM<br>
+1) Start at DC-1 (Window 2022 VM) homepage <br>
+2) Copy the Public IP address <br>
+3) Open Remote Desktop Login page <br>
+4) Paste the Public IP address, then click enter.
+5) Click "More choices", then click "Use a different account"<br>
+5) For the username, type "mydomain.com\labuser and type the same password you created for this VM <br>
 <br>
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
-<strong> Log in to DC-1. Type "Active Directory"in Start Menu search box (//edit screenshot later, put red rectangle around the start menu search box and Active Dicrectory//) and click "Active Directory Users and Computers (ADUC)" > </strong><br>
+1) Now that you're in to DC-1 (window 2022 VM), type "Active Directory"in Start Menu search box (1) and then cllick "Active Directory Users and Computers (ADUC)" (2) <br>
 <img width="960" alt="Capture - ADUC" src="https://github.com/jaysixco/configure-ad/assets/160427311/b947408d-dde2-4fdd-9b40-57cb426ec615">
 <br>
 
