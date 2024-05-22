@@ -236,7 +236,7 @@ Create a password >  <br>
 <br>
 8) After you click the play button (screenshot above), a bunch of accounts will start generating
 9) Type "Active Directory" in the start menu and click "Active Directory Users and Computers"
-10) Click "mydomain.com" and then "_EMPLOYEES". You will see that all the accounts being generated are held here.
+10) Click "mydomain.com" and then "_EMPLOYEES". You will see that all the accounts being generated are held here. <em>Example below </em>
 <br>
 <img width="565" alt="Capture - Users created" src="https://github.com/jaysixco/configure-ad/assets/160427311/352e9fef-cf56-4b6e-8eac-8956c6b9d500">
 <br>
