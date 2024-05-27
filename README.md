@@ -190,6 +190,7 @@ Create a password >  <br>
 ![3](https://github.com/jaysixco/configure-ad/assets/160427311/c71b4a54-869e-4571-9a36-6ef2d729992b)
 
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Go to Client-1 (Windows 10 VM) page and hit restart. Wait until it says the VM has been successfully restarted. </strong> <br>
+(A.C, #1)
 
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Now, log back in through Remote Desktop as labuser </strong> (remember, we haven't joined it to any domain yet)
 
@@ -208,8 +209,10 @@ Create a password >  <br>
 
 <strong> Remote Desktop for non-administrative users on Client-1 </strong> <br>
 1) Remote Desktop your way back in to Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System") <br>
-2) Click “Remote Desktop” <br>
-3) Click “Select users that can remotely access this PC” <br>
+2) On the "About" screen that pops up, scroll down and under "Related Settings" heading, click “Remote Desktop” <br>
+(Client-1, #1)
+3) Scroll down and click “Select users that can remotely access this PC” <br>
+(C-1, #2)
 4) Click “Add” <br>
 5) Type “domain users”, click </strong> "Check Names"
 6) There might be a popup asking for credentials. Just type "mydomain.com\jane_admin" for the username and whatever password you created then click "Ok". On the page after that, click "OK" as well.
