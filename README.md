@@ -158,9 +158,9 @@ Create a password >  <br>
 
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
 1) Double click "Admins" (1) Right click "jane_admin" (2), Click "Properties" (3) <br>
-(DC-1, #1)
+<img width="565" alt="#1" src="https://github.com/jaysixco/configure-ad/assets/160427311/000b1d3d-790c-4715-b83a-72dd8822fa42">
 4) Click "Member Of" tab (1), Click "Add" (2), Type "domain" (3), Click "Check names" (4) <br>
-(DC-1, #2)
+<img width="486" alt="#2" src="https://github.com/jaysixco/configure-ad/assets/160427311/f74f48b4-4930-47ea-9c50-f18f113193b4">
 8) Click "Domain Admins" <br>
 9) Click following button sequence: "Ok","Ok","Apply","Ok" <br>
 <br>
