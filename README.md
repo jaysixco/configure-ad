@@ -157,13 +157,10 @@ Create a password >  <br>
 <br>
 
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
-1) Double click "Admins" <br>
-2) Right click "jane_admin" <br>
-3) Click "Properties" <br>
-4) Click "Member Of" tab <br>
-5) Click "Add"
-6) Type "domain" <br>
-7) Click "Check names" <br>
+1) Double click "Admins" (1) Right click "jane_admin" (2), Click "Properties" (3) <br>
+(DC-1, #1)
+4) Click "Member Of" tab (1), Click "Add" (2), Type "domain" (3), Click "Check names" (4) <br>
+(DC-1, #2)
 8) Click "Domain Admins" <br>
 9) Click following button sequence: "Ok","Ok","Apply","Ok" <br>
 <br>
