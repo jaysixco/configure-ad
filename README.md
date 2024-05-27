@@ -227,16 +227,17 @@ Create a password >  <br>
 <br>
 <img width="960" alt="Capture - Click Raw" src="https://github.com/jaysixco/configure-ad/assets/160427311/0891ba73-964d-4479-bc91-6e08c6055411">
 <br>
-4) Copy all the "Raw" content (ctrl + A, then ctrl + C), then go back to the Powershell Ise homepage (see screenshot below). <br>
-5) Click "New File" (screenshot below, letter A). <br>
-6) Click anywhere in the white section and press "ctrl + V" to Paste. <br>
-7) Click the green play button to run the script (screenshot below, letter B)
+4) Copy all the "Raw" content (ctrl + A, then ctrl + C)
+5) Go back to the Powershell Ise homepage (see screenshot below). <br>
+6) Click "New File" (screenshot below, letter A). <br>
+7) Click anywhere in the white section and press "ctrl + V" to Paste. <br>
+8) Click the green play button to run the script (screenshot below, letter B)
 <br>
 <img width="854" alt="Capture - ctrl + V, New Script, Run Script" src="https://github.com/jaysixco/configure-ad/assets/160427311/31f27fbd-6c3b-47b7-8751-682adbb25135">
 <br>
-8) After you click the play button (screenshot above), a bunch of accounts will start generating
-9) Type "Active Directory" in the start menu and click "Active Directory Users and Computers"
-10) Click "mydomain.com" and then "_EMPLOYEES". You will see that all the accounts being generated are held here. <em>Example below </em>
+9) After you click the play button (screenshot above), a bunch of accounts will start generating
+10) Type "Active Directory" in the start menu and click "Active Directory Users and Computers"
+11) Click "mydomain.com" and then double click "_EMPLOYEES". You will see that all the accounts being generated are held here. <em>Example below </em>
 <br>
 <img width="565" alt="Capture - Users created" src="https://github.com/jaysixco/configure-ad/assets/160427311/352e9fef-cf56-4b6e-8eac-8956c6b9d500">
 <br>
