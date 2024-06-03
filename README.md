@@ -88,7 +88,7 @@ Windows 10 - DO check the box under Licensing
 <img width="960" alt="ping worked" src="https://github.com/jaysixco/configure-ad/assets/160427311/59817a5c-d136-4890-886b-a99891dec9b4">
 
 
-<strong> DC-1 (windows 2022 VM) </strong>  
+<strong> DC-1 (Windows 2022 VM) </strong>  
 <strong> Install ADDS + setup forest </strong><br>
 <strong>&nbsp;&nbsp;&nbsp;&nbsp;   Install ADDS </strong> = On the Service Manager page, click "Add roles and features" </strong><br>
 <img width="960" alt="Capture" src="https://github.com/jaysixco/configure-ad/assets/160427311/86f64b1b-abfc-435f-a5ee-8e7135ec307e">
@@ -120,6 +120,7 @@ Create a password >  <br>
 <br>
 <strong> Keep clicking "Next>" button until you get to the "Prerequisites Check" page. Then click "Install" button. After it installs, it will automatically log you out. </strong><br>
 <strong> <em>If you try to log back in to DC-1 (Windows 2022 VM) with "labuser" as the username, it won't work. You have to log back in as "mydomain.com\labuser" in the username. You can still log in with the same password you used for "labuser" (ie. if your password was "Abc123" for username "labuser", the password is still "Abc123" for username "mydomain.com\labuser). </em></strong><br>
+<br>
 1) Start at DC-1 (Window 2022 VM) homepage <br>
 2) Copy the Public IP address <br>
 3) Open Remote Desktop Login page <br>
@@ -128,7 +129,7 @@ Create a password >  <br>
 5) For the username, type "mydomain.com\labuser and type the same password you created for the VM <br>
 <br>
 <strong> Create an Admin account and a place to store all the users we'll create later  </strong><br>
-1) Now that you're in to DC-1 (window 2022 VM), type "Active Directory"in Start Menu search box (1) and then cllick "Active Directory Users and Computers (ADUC)" (2) <br>
+1) Now that you're in to DC-1 (Window 2022 VM), type "Active Directory"in Start Menu search box (1) and then cllick "Active Directory Users and Computers (ADUC)" (2) <br>
 <img width="960" alt="Capture - ADUC" src="https://github.com/jaysixco/configure-ad/assets/160427311/b947408d-dde2-4fdd-9b40-57cb426ec615">
 <br>
 
@@ -139,7 +140,7 @@ Create a password >  <br>
 <img width="565" alt="Capture - OU" src="https://github.com/jaysixco/configure-ad/assets/160427311/d7c7cb8d-4d7c-40f7-bdd2-12d5f3374e75">
 <br>
 4) Type "_EMPLOYEES" (Underscore not mandatory in '_EMPLOYEES') <br>
-
+<br>
 
 <strong> Create a new OU named “_ADMINS”  </strong><br>
 1) Right click "mydomain.com" <br>
@@ -161,7 +162,7 @@ Create a password >  <br>
 5) On the page after this, click "Finish"<br>
 <br>
 
-<strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet)   </strong><br>
+<strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet). To do this, follow steps below.  </strong><br>
 <br>
 
 <strong> Add jane_admin to the “Domain Admins” Security Group  </strong><br>
@@ -186,12 +187,12 @@ Create a password >  <br>
 
 <strong> Now we'll be dealing with Client-1  </strong><br>
 
-<strong> CLIENT-1 (windows 10 VM) </strong> <br>
+<strong> CLIENT-1 (Windows 10 VM) </strong> <br>
 <strong> Starting in Azure, go to DNS server and make it DC-1's private IP </strong> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   Get DC's Private IP address first <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Click DC-1 > Scroll down until you see "Private IP address" <br>   
 1) Go to Azure's Virtual machine page
-2) Right click Client-1 (window 10 Vm) and open it in a new tab
+2) Right click Client-1 (Windows 10 Vm) and open it in a new tab
 3) Under "Networking" on left hand side, click "Network settings" (1) and then Click "Network Interface" (2) <br>
 ![2](https://github.com/jaysixco/configure-ad/assets/160427311/3ea657a0-0262-47fc-932f-be8243511f63)
 5) Click "DNS servers" (1), click "Custom" (2), paste DC-1's (2022 VM) private IP address in the box (3), and then click "Save"<br>
@@ -235,7 +236,7 @@ Create a password >  <br>
 <br>
 <img width="960" alt="Capture - Click Raw" src="https://github.com/jaysixco/configure-ad/assets/160427311/0891ba73-964d-4479-bc91-6e08c6055411">
 <br>
-4) Copy all the "Raw" content (ctrl + A, then ctrl + C)
+4) Copy all the "Raw" content (ctrl + A, then ctrl + C) <br>
 5) Go back to the Powershell Ise homepage (see screenshot below). <br>
 6) Click "New File" (screenshot below, letter A). <br>
 7) Click anywhere in the white section and press "ctrl + V" to Paste. <br>
@@ -261,7 +262,7 @@ Create a password >  <br>
 <strong> Finish. </strong>
 
 <p>
-  <em>Steps above are accurate. Are able to complete with steps above. All that is left to do is slight formatting.</em>
+Done. Everything correct, just needs a screenshot run.</em>
 </p>
 <br>
 <br>
