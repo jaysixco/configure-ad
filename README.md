@@ -128,10 +128,11 @@ Create a password >  <br>
 <strong> Create an Organizational Unit (OU) called “_EMPLOYEES”  </strong><br>
 1) Right click "mydomain.com" <br>
 2) Hover mouse over "New" <br>
-3) Click "Organizational Unit"
-4) Type "_EMPLOYEES" (Underscore not mandatory in '_EMPLOYEES') <br>
+3) Click "Organizational Unit" <br>
 <img width="565" alt="Capture - OU" src="https://github.com/jaysixco/configure-ad/assets/160427311/d7c7cb8d-4d7c-40f7-bdd2-12d5f3374e75">
 <br>
+4) Type "_EMPLOYEES" (Underscore not mandatory in '_EMPLOYEES') <br>
+
 
 <strong> Create a new OU named “_ADMINS”  </strong><br>
 1) Right click "mydomain.com" <br>
