@@ -37,15 +37,13 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<strong> SUMMARY</strong>  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP </em> <br>
 <strong> Create 2 VMs (1 Window 2022 [DC-1], 1 Window 10 [Client-1]) (Use the same Resource Group and Vnet )</strong><br>
 Windows 2022 - note: don't check the box under Licensing <br>
 Windows 10 - DO check the box under Licensing
 
   
 <strong> Change DC-1 NIC to static </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;  1) Go to the Virtual Machine's page <br>
+1) Go to the Virtual Machine's page <br>
 2) Right click the name of your Windows 2022 DC-1 and open it in a new tab <br>
 3) In the sidebar under "Networking" click "Network settings" (1) and then Click "IP configurations" (2) <br>
 ![1 - put 2 red recs](https://github.com/jaysixco/configure-ad/assets/160427311/cdf031c9-aded-4db5-a705-ea40688a515c)
@@ -57,13 +55,22 @@ Windows 10 - DO check the box under Licensing
 
 <strong> Log in to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
 1) Log in to Windows 2022 VM through Remote Desktop <br>
-- (copy and paste the instructions from monitoring traffic draft)
-2) Type "firewall" in the start menu search bar
-3) Click option with 'Advanced Security' <br>
+1) Starting from the Virtual Machines homepage (see screenshot), right click the name of your Windows 2022 VM and open it in a new tab <br>
+2) In the Window 2022 VM homepage, look for "Public IP address" and click white space next to it to copy that number to your clipboard <br>
+3) Click the Search button at the bottom of your screen (1), type "Remote Desktop Connection" (2) and then click "Open" (3) <br>
+![Remote Desktop Login](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/171f3b17-5895-4a7f-9591-1d7b359c3191)
+4) Press the "Ctrl" and "V" button on your keyboard at the same time to paste the number you copied in step 2 and then click "Connect" <br>
+5) On the page that says "Enter Your Credentials" click "More choices" and then "Use a different account" <br>
+6) Type the username and password you created for Windows 2022 VM, then click the blue button that says "Ok"
+7) If this pops up (see screenshot), click "Yes". <br>
+![if this pops up](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/a3f8403a-d15e-4eef-809d-c961677f0596) <br>
+8) As it logs you into the Virtual Machine, there will be a blue page that says "Choose privacy settings for your device". Turn them all off. Then click the blue button at the bottom that says "Accept". <br>
+9) Type "firewall" in the start menu search bar <br>
+10) Click option with 'Advanced Security' <br>
 <img width="960" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/6da63887-66cf-4881-a468-91e719fd54ea"> <br>
-4) Click "Inbound Rules" (1), then scroll right until you are able see and click the "Protocol" tab (2) <br>
+11) Click "Inbound Rules" (1), then scroll right until you are able see and click the "Protocol" tab (2) <br>
 <img width="785" alt="2" src="https://github.com/jaysixco/configure-ad/assets/160427311/1d8d84fc-7469-443f-942b-c57e986095c2"> <br>
-5) Scroll back to the left and, while holding down the Shift key on your keyboard, click these two "Core Networking Diagnostics" (1), then click "Enable Rule" (2) <br>
+12) Scroll back to the left and, while holding down the Shift key on your keyboard, click these two "Core Networking Diagnostics" (1), then click "Enable Rule" (2) <br>
 <img width="785" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/519678c6-983a-4b4e-b652-9f4303db229e"> <br>
 
 
