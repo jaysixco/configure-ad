@@ -118,39 +118,23 @@ Create 2 Virtual Machines (VMs)
 3) Refresh the page from time to time until it shows that both VM's are running (see screenshot).
 ![2 VMs](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/6b3b6399-3786-4c02-a60e-5b8c63f6b919)
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 <h2>started from here</h2>
-
-<strong> Connect to your Windows 10 Virtual Machine (VM) through Remote Desktop </strong>
-1) Starting from the Virtual Machines homepage (see screenshot), right click the name of your Windows 10 VM and open it in a new tab <br>
-![Virtual Machines homepage](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/3aa12a11-a66d-463a-9986-cce1b92aa8e4)
-2) In the Window 10 VM homepage, look for "Public IP address" and click white space next to it to copy that number to your clipboard <br>
-![Windows 10 VM homepage](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/d6b36c15-52da-4daa-8d6b-b6852dc2b384)
-3) Click the Search button at the bottom of your screen (1), type "Remote Desktop Connection" (2) and then click "Open" (3) <br>
-![Remote Desktop Login](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/171f3b17-5895-4a7f-9591-1d7b359c3191)
-4) Press the "Ctrl" and "V" button on your keyboard at the same time to paste the number you copied in step 2 and then click "Connect" <br>
-5) On the page that says "Enter Your Credentials" click "More choices" and then "Use a different account" <br>
-6) Type the username and password you created for Windows 10 VM, then click the blue button that says "Ok"
-7) If this pops up (see screenshot), click "Yes". <br>
-![if this pops up](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/a3f8403a-d15e-4eef-809d-c961677f0596)
-8) As it logs you into the Virtual Machine, there will be a blue page that says "Choose privacy settings for your device". Turn them all off. Then click the blue button at the bottom that says "Accept".
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-  
 <strong> Change DC-1 NIC to static </strong><br>
 1) Go to the Virtual Machine's page <br>
 2) Right click the name of your Windows 2022 DC-1 and open it in a new tab <br>
