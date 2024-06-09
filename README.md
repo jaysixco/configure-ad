@@ -58,8 +58,8 @@ Create 2 Virtual Machines (VMs)
    For "Availability Zone * - Leave it as "Zone 1"<br>
    For "Image *" - click "Windows 10 Pro, version 22H2 - x64 Gen2" <br>
    For "Size *" - Any option that has "2 vcpus" or "4 vcpus" <br>
-   For "Username *" - whatever you want <br>
-   For "Password *" - whatever you want <br>
+   For "Username *" - "Windows-10-VM" (for example/whatever you want) <br>
+   For "Password *" - "Password1" (for example/whatever you want) <br>
    For "Confirm password *" - whatever you typed in previous step <br>
    For "Public inbound ports *" - "Allow selected ports" <br>
    For "Select inbound ports *" - "RDP (3389)" <br>
@@ -92,11 +92,12 @@ Create 2 Virtual Machines (VMs)
    For "Image *" - "Ubuntu Server 22.04 LTS - x64 Gen2" <br>
    For "Size *" - Any option that has "2 vcpus" or "4 vcpus" <br>
    For "Authentication type" - click "Password"
-   For "Username *" - Same username as the one you chose for Windows 10 <br>
-   For "Password *" - Same password as the one you chose for Windows 10 <br>
+   For "Username *" - "Windows-2022-VM" (for example/whatever you want) <br>
+   For "Password *" - "Password1" (for example/whatever you want) <br>
    For "Confirm password *" - whatever you typed in previous step <br>
    For "Public inbound ports *" - "Allow selected ports" <br>
    For "Select inbound ports *" - "SSH (22)" <br>
+   Under "Licensing" **DO NOT** check the box next to "I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights." <br>
    When you're done, click the blue button at the bottom that says "Review + create"
    An example of how the page should look like when done: <br>
 ![Linux Full Page 1](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/fd11a194-869c-42a0-807d-765af83f6d2c)
@@ -118,8 +119,6 @@ Create 2 Virtual Machines (VMs)
 ![2 VMs](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/6b3b6399-3786-4c02-a60e-5b8c63f6b919)
 
 <h2>started from here</h2>
-
-<strong>Part 2 (Observe ICMP Traffic)</strong>
 
 <strong> Connect to your Windows 10 Virtual Machine (VM) through Remote Desktop </strong>
 1) Starting from the Virtual Machines homepage (see screenshot), right click the name of your Windows 10 VM and open it in a new tab <br>
