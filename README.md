@@ -41,6 +41,116 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 Windows 2022 - note: don't check the box under Licensing <br>
 Windows 10 - DO check the box under Licensing
 
+Create 2 Virtual Machines (VMs)
+
+<strong> First we create a Windows 10 Virtual Machine </strong>
+
+1) Type "portal.azure.com" in the url search bar, which should bring you to the Azure homepage and then click "Virtual Machines" (see screenshot)
+![Screenshot 2024-05-19 120803](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/3e38d2a9-6b4a-4191-8d7b-371ced1ae53d)
+
+2) On the Virtual Machines page, click "+ Create" (in the left hand corner) and then click "Azure virtual machine" in the drop down menu (see screenshot)
+![Screenshot 2024-05-19 121645](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/1478bc17-d2e7-4b9e-9da5-d3f1a560becd)
+
+
+4) For "Resource group *" - click "Create new" and then type whatever name you want <br>
+   For "Virtual machine name *" - type whatever name you want <br>
+   For "Region *" - Click any option that starts with ("US") <br>
+   For "Availability Zone * - Leave it as "Zone 1"<br>
+   For "Image *" - click "Windows 10 Pro, version 22H2 - x64 Gen2" <br>
+   For "Size *" - Any option that has "2 vcpus" or "4 vcpus" <br>
+   For "Username *" - whatever you want <br>
+   For "Password *" - whatever you want <br>
+   For "Confirm password *" - whatever you typed in previous step <br>
+   For "Public inbound ports *" - "Allow selected ports" <br>
+   For "Select inbound ports *" - "RDP (3389)" <br>
+   Under "Licensing" check the box next to "I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights." <br>
+   When you're done, cLick the blue button at the bottom that says "Review + create"
+   An example of how the page should look like when done: <br>
+   ![Full page 1](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/24ba3f96-d158-43c7-a62b-2b8046d0ad02)
+   ![Full page 2](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/d0a69adc-1767-4477-824d-e83f8c83e24d)
+   
+6) Clicking "Review + create" from the previous step will bring you to this page. All you have to do is click the blue button that says "Create".
+![Screenshot 2024-05-19 130702](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/48b6672d-5ec0-46e2-b79e-4cdf45514bc8)
+
+
+<strong> Now we create a Linux (Ubuntu) Virtual Machine </strong>
+
+1) After you click "Create" in previous step, you will see this page <br>
+![Wait till this page is done](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/93ad160a-4375-4355-b0ea-0855729e5749)
+2) Wait until it turns into this page (see screenshot), then click "Create another VM" <br>
+![click create another VM](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/0f5657d0-65a5-4395-bdd5-fc869578558b)
+3) Click the "Networking" tab
+4) Click the drop down menu for "Virtual network"
+5) If you don't see any virtual networks, like this (see screenshot), refresh the page
+![no virtual network](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/739fe2e2-d91b-4bc3-8f9c-d20f1595ab2d)
+6) Repeat steps 2 and 3, and now you should see this (see screenshot). Click whichever option ends in "-vnet", then click the "Basics" tab.
+![now virtual network](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/0dd7b782-54b0-4a81-9d1e-95af35646544)
+7) For "Resource group *" - click the drop down menu and click the name of the resource group you created for Windows 10 <br>
+   For "Virtual machine name *" - type whatever you want
+   For "Region *" - Same region as the one you chose for Windows 10 <br>
+   For "Availability Zone * - Leave it as "Zone 1"<br>
+   For "Image *" - "Ubuntu Server 22.04 LTS - x64 Gen2" <br>
+   For "Size *" - Any option that has "2 vcpus" or "4 vcpus" <br>
+   For "Authentication type" - click "Password"
+   For "Username *" - Same username as the one you chose for Windows 10 <br>
+   For "Password *" - Same password as the one you chose for Windows 10 <br>
+   For "Confirm password *" - whatever you typed in previous step <br>
+   For "Public inbound ports *" - "Allow selected ports" <br>
+   For "Select inbound ports *" - "SSH (22)" <br>
+   When you're done, click the blue button at the bottom that says "Review + create"
+   An example of how the page should look like when done: <br>
+![Linux Full Page 1](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/fd11a194-869c-42a0-807d-765af83f6d2c)
+![Linux Full Page 2](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/5df2704c-cee1-4cc1-a5fd-51bb79a43a26)
+
+8) Clicking "Review + create" from the previous step will bring you to this page. All you have to do is click the blue button that says "Create".
+![Screenshot 2024-05-19 130702](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/48b6672d-5ec0-46e2-b79e-4cdf45514bc8)
+
+
+<strong> Waiting for the VMs to be created </strong>
+
+1) Click the Microsoft Search bar (1) and then click "Virtual Machines" (2) <br>
+![click search then VM](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/7b1c4437-bdda-4f29-bce7-fed665dd1380)
+
+2) You might see that 1 VM is running while the other VM is still being created (see screenshot).
+![1 VM](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/74de8086-ff98-4afc-be9f-36aa51245c8d)
+
+3) Refresh the page from time to time until it shows that both VM's are running (see screenshot).
+![2 VMs](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/6b3b6399-3786-4c02-a60e-5b8c63f6b919)
+
+<h2>started from here</h2>
+
+<strong>Part 2 (Observe ICMP Traffic)</strong>
+
+<strong> Connect to your Windows 10 Virtual Machine (VM) through Remote Desktop </strong>
+1) Starting from the Virtual Machines homepage (see screenshot), right click the name of your Windows 10 VM and open it in a new tab <br>
+![Virtual Machines homepage](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/3aa12a11-a66d-463a-9986-cce1b92aa8e4)
+2) In the Window 10 VM homepage, look for "Public IP address" and click white space next to it to copy that number to your clipboard <br>
+![Windows 10 VM homepage](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/d6b36c15-52da-4daa-8d6b-b6852dc2b384)
+3) Click the Search button at the bottom of your screen (1), type "Remote Desktop Connection" (2) and then click "Open" (3) <br>
+![Remote Desktop Login](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/171f3b17-5895-4a7f-9591-1d7b359c3191)
+4) Press the "Ctrl" and "V" button on your keyboard at the same time to paste the number you copied in step 2 and then click "Connect" <br>
+5) On the page that says "Enter Your Credentials" click "More choices" and then "Use a different account" <br>
+6) Type the username and password you created for Windows 10 VM, then click the blue button that says "Ok"
+7) If this pops up (see screenshot), click "Yes". <br>
+![if this pops up](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/a3f8403a-d15e-4eef-809d-c961677f0596)
+8) As it logs you into the Virtual Machine, there will be a blue page that says "Choose privacy settings for your device". Turn them all off. Then click the blue button at the bottom that says "Accept".
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
   
 <strong> Change DC-1 NIC to static </strong><br>
 1) Go to the Virtual Machine's page <br>
