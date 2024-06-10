@@ -184,15 +184,18 @@ Create 2 Virtual Machines (VMs)
 <br>
 
 </strong> Remote Desktop your way into Client-1 (Windows 10 VM) </strong> <br>
-1) Start at the Virtual Machines homepage
-2) Right click the name of the Windows 10 VM and then click "Open in a new tab"
+1) Start at the Virtual Machines homepage <br> <img width="574" alt="vmhomepage" src="https://github.com/jaysixco/configure-ad/assets/160427311/40b3a24c-2806-4cb3-a21b-225bd3b6f8b3">
+
+2) Right click the name of the Windows 10 VM and then click "Open in a new tab" <br> <img width="959" alt="w10newtab" src="https://github.com/jaysixco/configure-ad/assets/160427311/c6aa765f-c40c-463c-a712-2d88d62e363e">
+
 3) In the Window 10 VM homepage, look for "Public IP address" and click white space next to it to copy that number to your clipboard <br>
-<img width="958" alt="coptoclip" src="https://github.com/jaysixco/configure-ad/assets/160427311/c8a4d375-a65e-49c9-8da0-73110aff4782"> <br>
+<img width="959" alt="w10coptoclip" src="https://github.com/jaysixco/configure-ad/assets/160427311/6db1a7b3-1751-4589-8f4b-12905b659715">
+<br>
 4) Click the Search button at the bottom of your screen (1), type "Remote Desktop Connection" (2) and then click "Open" (3) <br>
 ![Remote Desktop Login](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/171f3b17-5895-4a7f-9591-1d7b359c3191)
 5) Press the "Ctrl" and "V" button on your keyboard at the same time to paste the number you copied in step 2 and then click "Connect" <br>
 6) On the page that says "Enter Your Credentials" click "More choices" and then click "Use a different account" <br>
-7) Type the username and password you created for Windows 10 VM, then click the blue button that says "Ok"
+7) Type the username and password you created for Windows 10 VM, then click the blue button that says "Ok" <br> 
 8) If this pops up (see screenshot), click "Yes". <br>
 ![if this pops up](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/a3f8403a-d15e-4eef-809d-c961677f0596) <br>
 9) As it logs you into the Virtual Machine, there will be a blue page that says "Choose privacy settings for your device". Turn them all off. Then click the blue button at the bottom that says "Accept". <br>
