@@ -206,10 +206,12 @@ Create 2 Virtual Machines (VMs)
 <img width="960" alt="5" src="https://github.com/jaysixco/configure-ad/assets/160427311/87883c66-8baa-44e1-82d4-611e8ed7bb65">
 
 10) Open command prompt <br>
-11) Type "ping" and then paste the Private IP address you copied <br>
+11) Type "ping" and then paste the Private IP address you copied/memorized <br>
 12) If it worked, you should see the word "Reply" repeated a few times like this: </em> <br>
 <img width="960" alt="ping worked" src="https://github.com/jaysixco/configure-ad/assets/160427311/59817a5c-d136-4890-886b-a99891dec9b4">
 
+Exit Window 10 VM (add pics from phone)
+Click Remote Desktop Icon and then click into Window 2022 VM
 
 <strong> DC-1 (Windows 2022 VM) </strong>  
 <strong> Install ADDS + setup forest </strong><br>
