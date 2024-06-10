@@ -143,11 +143,10 @@ Create 2 Virtual Machines (VMs)
 1) Go to the Virtual Machine's page <br>
 2) Right click the name of your Windows 2022 DC-1 and open it in a new tab <br>
 3) In the sidebar under "Networking" click "Network settings" (1) and then Click "IP configurations" (2) <br>
-![1 - put 2 red recs](https://github.com/jaysixco/configure-ad/assets/160427311/cdf031c9-aded-4db5-a705-ea40688a515c)
+<img width="806" alt="ipconfig" src="https://github.com/jaysixco/configure-ad/assets/160427311/3b7d6193-4724-48cf-b791-9f183f0f7395">
 <br>
 4) Scroll down and click "ipconfig1" (1), then click "Static" (2), and then click "Save" (3) <br>
-![2 - 3 red recs - ip, static, save](https://github.com/jaysixco/configure-ad/assets/160427311/66dc1505-5820-43f1-8521-77edd06a4d3f) <br>
-
+<img width="864" alt="static" src="https://github.com/jaysixco/configure-ad/assets/160427311/29453887-4abb-41da-a15a-1df8880755ee">
 
 
 <strong> Log in to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
