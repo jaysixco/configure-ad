@@ -66,39 +66,43 @@ Create 2 Virtual Machines (VMs)
    Under "Licensing" check the box next to "I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights." <br>
    When you're done, cLick the blue button at the bottom that says "Review + create"
    An example of how the page should look like when done: <br>
-   ![Full page 1](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/24ba3f96-d158-43c7-a62b-2b8046d0ad02)
-   ![Full page 2](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/d0a69adc-1767-4477-824d-e83f8c83e24d)
+  ![w10vmpg1](https://github.com/jaysixco/configure-ad/assets/160427311/db59fffb-0e55-46a1-aaa2-6492eecb811a) <br>
+  <img width="302" alt="w10vmpg2" src="https://github.com/jaysixco/configure-ad/assets/160427311/3efbd4d7-62fd-4eac-853d-588b7785787f">
+
+
    
 6) Clicking "Review + create" from the previous step will bring you to this page. All you have to do is click the blue button that says "Create".
 ![Screenshot 2024-05-19 130702](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/48b6672d-5ec0-46e2-b79e-4cdf45514bc8)
 
 
-<strong> Now we create a Linux (Ubuntu) Virtual Machine </strong>
+<strong> Now we create a Windows 2022 Virtual Machine </strong>
 
 1) After you click "Create" in previous step, you will see this page <br>
-![Wait till this page is done](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/93ad160a-4375-4355-b0ea-0855729e5749)
+<img width="956" alt="deployment in progress" src="https://github.com/jaysixco/configure-ad/assets/160427311/11a468e8-9380-41cf-849c-7ccada54790d">
+<br>
 2) Wait until it turns into this page (see screenshot), then click "Create another VM" <br>
-![click create another VM](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/0f5657d0-65a5-4395-bdd5-fc869578558b)
-3) Click the "Networking" tab
-4) Click the drop down menu for "Virtual network"
-5) If you don't see any virtual networks, like this (see screenshot), refresh the page
-![no virtual network](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/739fe2e2-d91b-4bc3-8f9c-d20f1595ab2d)
-6) Repeat steps 2 and 3, and now you should see this (see screenshot). Click whichever option ends in "-vnet", then click the "Basics" tab.
-![now virtual network](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/0dd7b782-54b0-4a81-9d1e-95af35646544)
+![Screenshot 2024-06-10 074023](https://github.com/jaysixco/configure-ad/assets/160427311/08685797-a9c7-43db-abe0-88f0671d09e6) <br>
+3) Click the "Networking" tab <br>
+4) Click the drop down menu for "Virtual network" <br>
+5) If you don't see any virtual networks, like this (see screenshot), refresh the page <br>
+![no virtual network](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/739fe2e2-d91b-4bc3-8f9c-d20f1595ab2d) <br>
+6) Repeat steps 2 and 3, and now you should see this (see screenshot). Click whichever option ends in "-vnet", then click the "Basics" tab. <br>
+<img width="593" alt="image" src="https://github.com/jaysixco/configure-ad/assets/160427311/059c839e-b18d-43d1-ab3d-f0a4a9aa021d">
+<br>
 7) For "Resource group *" - click the drop down menu and click the name of the resource group you created for Windows 10 <br>
-   For "Virtual machine name *" - type whatever you want
+   For "Virtual machine name *" - type whatever you want <br>
    For "Region *" - Same region as the one you chose for Windows 10 <br>
    For "Availability Zone * - Leave it as "Zone 1"<br>
    For "Image *" - "Ubuntu Server 22.04 LTS - x64 Gen2" <br>
    For "Size *" - Any option that has "2 vcpus" or "4 vcpus" <br>
-   For "Authentication type" - click "Password"
+   For "Authentication type" - click "Password" <br>
    For "Username *" - "Windows-2022-VM" (for example/whatever you want) <br>
    For "Password *" - "Password1" (for example/whatever you want) <br>
    For "Confirm password *" - whatever you typed in previous step <br>
    For "Public inbound ports *" - "Allow selected ports" <br>
    For "Select inbound ports *" - "SSH (22)" <br>
    Under "Licensing" **DO NOT** check the box next to "I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights." <br>
-   When you're done, click the blue button at the bottom that says "Review + create"
+   When you're done, click the blue button at the bottom that says "Review + create" <br>
    An example of how the page should look like when done: <br>
 ![Linux Full Page 1](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/fd11a194-869c-42a0-807d-765af83f6d2c)
 ![Linux Full Page 2](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/5df2704c-cee1-4cc1-a5fd-51bb79a43a26)
