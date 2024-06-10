@@ -421,6 +421,11 @@ Done. Everything correct, just needs a screenshot run.</em>
 <img width="623" alt="type cmd" src="https://github.com/jaysixco/configure-ad/assets/160427311/f7e90b86-eec5-419e-afdc-147915196b66">
 <img width="674" alt="type logoff" src="https://github.com/jaysixco/configure-ad/assets/160427311/8ab751f6-7f82-4733-8e44-06fcd9189129">
 
+<img width="960" alt="right click start, click system" src="https://github.com/jaysixco/configure-ad/assets/160427311/e975a35c-af0d-4aa6-aa6d-627f7ab50fe5">
+<img width="601" alt="rename this pc" src="https://github.com/jaysixco/configure-ad/assets/160427311/daf013c7-5136-474f-a4d5-64d40361b0e2">
+<img width="307" alt="click change" src="https://github.com/jaysixco/configure-ad/assets/160427311/794905cf-860e-451b-becb-031589a41a33">
+<img width="242" alt="click circle, type mydomain, click Ok" src="https://github.com/jaysixco/configure-ad/assets/160427311/d2c750e1-d659-44e8-9ad5-5e72d487c384">
+<img width="342" alt="page that appears type" src="https://github.com/jaysixco/configure-ad/assets/160427311/86749a8a-34ee-4c08-829c-7200b0baf244">
 
 
 
