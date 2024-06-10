@@ -104,12 +104,12 @@ Create 2 Virtual Machines (VMs)
    Under "Licensing" **DO NOT** check the box next to "I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights." <br>
    When you're done, click the blue button at the bottom that says "Review + create" <br>
    An example of how the page should look like when done: <br>
-![Linux Full Page 1](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/fd11a194-869c-42a0-807d-765af83f6d2c)
-![Linux Full Page 2](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/5df2704c-cee1-4cc1-a5fd-51bb79a43a26)
+<img width="306" alt="w22p1" src="https://github.com/jaysixco/configure-ad/assets/160427311/b6da2760-463e-4efc-ac4a-887d86203203"> <br>
+<img width="302" alt="w22p2" src="https://github.com/jaysixco/configure-ad/assets/160427311/84b94ca5-a8d9-4673-aad0-9ef6718402e1">
+
 
 8) Clicking "Review + create" from the previous step will bring you to this page. All you have to do is click the blue button that says "Create".
-![Screenshot 2024-05-19 130702](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/48b6672d-5ec0-46e2-b79e-4cdf45514bc8)
-
+<img width="533" alt="w22create" src="https://github.com/jaysixco/configure-ad/assets/160427311/63908051-93c3-4525-b355-6e2985f9f5bc">
 
 <strong> Waiting for the VMs to be created </strong>
 
@@ -117,10 +117,10 @@ Create 2 Virtual Machines (VMs)
 ![click search then VM](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/7b1c4437-bdda-4f29-bce7-fed665dd1380)
 
 2) You might see that 1 VM is running while the other VM is still being created (see screenshot).
-![1 VM](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/74de8086-ff98-4afc-be9f-36aa51245c8d)
+<img width="958" alt="1run" src="https://github.com/jaysixco/configure-ad/assets/160427311/78b00970-db1c-4a2a-9924-9e91b6793184">
 
 3) Refresh the page from time to time until it shows that both VM's are running (see screenshot).
-![2 VMs](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/6b3b6399-3786-4c02-a60e-5b8c63f6b919)
+<img width="959" alt="2run" src="https://github.com/jaysixco/configure-ad/assets/160427311/21c8866d-d516-467d-bfb2-0b9452e2e758">
 
 <br>
 <br>
