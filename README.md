@@ -409,7 +409,6 @@ Done. Everything correct, just needs a screenshot run.</em>
 
 
 
-
 <img width="328" alt="pg after this, click finish" src="https://github.com/jaysixco/configure-ad/assets/160427311/a762db89-e8f1-40a4-b76b-4193ff24ca93">
 
 
@@ -418,6 +417,9 @@ Done. Everything correct, just needs a screenshot run.</em>
 <img width="308" alt="click Apply, click Ok (3)" src="https://github.com/jaysixco/configure-ad/assets/160427311/16e8dfff-7dc1-4ba2-a839-4fac662d1996">
 
 
+
+<img width="623" alt="type cmd" src="https://github.com/jaysixco/configure-ad/assets/160427311/f7e90b86-eec5-419e-afdc-147915196b66">
+<img width="674" alt="type logoff" src="https://github.com/jaysixco/configure-ad/assets/160427311/8ab751f6-7f82-4733-8e44-06fcd9189129">
 
 
 
