@@ -140,14 +140,16 @@ Create 2 Virtual Machines (VMs)
 
 <h2>started from here</h2>
 <strong> Change DC-1 NIC to static </strong><br>
-1) Go to the Virtual Machine's page <br>
-2) Right click the name of your Windows 2022 DC-1 and open it in a new tab <br>
-3) In the sidebar under "Networking" click "Network settings" (1) and then Click "IP configurations" (2) <br>
+1) Go to the Virtual Machine's page and right click the name of your Windows 2022 DC-1 and open it in a new tab <br><br>
+<img width="572" alt="new tab" src="https://github.com/jaysixco/configure-ad/assets/160427311/52d39049-764d-402b-a154-e82dfd2c8b97">
+
+2) In the sidebar under "Networking" click "Network settings" (1) and then Click "IP configurations" (2) <br>
 <img width="806" alt="ipconfig" src="https://github.com/jaysixco/configure-ad/assets/160427311/3b7d6193-4724-48cf-b791-9f183f0f7395">
 <br>
-4) Scroll down and click "ipconfig1" (1), then click "Static" (2), and then click "Save" (3) <br>
+3) Scroll down and click "ipconfig1" (1), then click "Static" (2), scroll down and then click "Save" (3) <br>
 <img width="864" alt="static" src="https://github.com/jaysixco/configure-ad/assets/160427311/29453887-4abb-41da-a15a-1df8880755ee">
 
+4)
 
 <strong> Log in to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
 1) Log in to Windows 2022 VM through Remote Desktop <br>
@@ -159,7 +161,7 @@ Create 2 Virtual Machines (VMs)
 3) Click the Search button at the bottom of your screen (1), type "Remote Desktop Connection" (2) and then click "Open" (3) <br>
 ![Remote Desktop Login](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/171f3b17-5895-4a7f-9591-1d7b359c3191)
 4) Press the "Ctrl" and "V" button on your keyboard at the same time to paste the number you copied in step 2 and then click "Connect" <br>
-5) On the page that says "Enter Your Credentials" click "More choices" and then "Use a different account" <br>
+5) On the page that says "Enter Your Credentials" click "More choices" and then click "Use a different account" <br>
 6) Type the username and password you created for Windows 2022 VM, then click the blue button that says "Ok"
 7) If this pops up (see screenshot), click "Yes". <br>
 ![if this pops up](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/a3f8403a-d15e-4eef-809d-c961677f0596) <br>
@@ -169,21 +171,34 @@ Create 2 Virtual Machines (VMs)
 <img width="960" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/6da63887-66cf-4881-a468-91e719fd54ea"> <br>
 11) Click "Inbound Rules" (1), then scroll right until you are able see and click the "Protocol" tab (2) <br>
 <img width="785" alt="2" src="https://github.com/jaysixco/configure-ad/assets/160427311/1d8d84fc-7469-443f-942b-c57e986095c2"> <br>
-12) Scroll back to the left and, while holding down the Shift key on your keyboard, click these two "Core Networking Diagnostics" (1), then click "Enable Rule" (2) <br>
+12) Scroll back to the left and, while holding down the Shift key on your keyboard, click these two "Core Networking Diagnostics - ICMP Echo" (1), then click "Enable Rule" (2) <br>
 <img width="785" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/519678c6-983a-4b4e-b652-9f4303db229e"> <br>
 
 
 <strong> Log in to Client-1 and ping DC-1's private IP address to see if it worked  </strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em> Instructions on how to get DC's private IP <br>
-1) Start at Virtual Machines homepage <br>
-2) Right click name of Window's 2022 VM and open it in a new tab <br>
+</strong> Find DC-1's (Window 2022 VM's) private IP address
+1) Start at Virtual Machines homepage and right click name of Window's 2022 VM and open it in a new tab <br>
+<img width="572" alt="new tab" src="https://github.com/jaysixco/configure-ad/assets/160427311/143bc443-5399-4417-ac4d-0278396edfc4">
 3) Scroll down <br>
-4) Under header called "Networking" you will see a number next to "Private IP address" <br>
-5) Copy that number <br>
-6) Remote Desktop your way into Client-1 <br>
-7) Open command prompt <br>
-8) Type "ping" and then paste the Private IP address you copied <br>
-9) If it worked, you should see the word "Reply" repeated a few times like this: </em> <br>
+4) Under header called "Networking" you will see a number next to "Private IP address". Take note of this number. You will need it later on. <br>
+<br>
+
+</strong> Remote Desktop your way into Client-1 (Windows 10 VM) </strong> <br>
+1) Start at the Virtual Machines homepage
+2) Right click the name of the Windows 10 VM and then click "Open in a new tab"
+3) In the Window 10 VM homepage, look for "Public IP address" and click white space next to it to copy that number to your clipboard <br>
+<img width="958" alt="coptoclip" src="https://github.com/jaysixco/configure-ad/assets/160427311/c8a4d375-a65e-49c9-8da0-73110aff4782"> <br>
+4) Click the Search button at the bottom of your screen (1), type "Remote Desktop Connection" (2) and then click "Open" (3) <br>
+![Remote Desktop Login](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/171f3b17-5895-4a7f-9591-1d7b359c3191)
+5) Press the "Ctrl" and "V" button on your keyboard at the same time to paste the number you copied in step 2 and then click "Connect" <br>
+6) On the page that says "Enter Your Credentials" click "More choices" and then click "Use a different account" <br>
+7) Type the username and password you created for Windows 10 VM, then click the blue button that says "Ok"
+8) If this pops up (see screenshot), click "Yes". <br>
+![if this pops up](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/a3f8403a-d15e-4eef-809d-c961677f0596) <br>
+9) As it logs you into the Virtual Machine, there will be a blue page that says "Choose privacy settings for your device". Turn them all off. Then click the blue button at the bottom that says "Accept". <br>
+10) Open command prompt <br>
+11) Type "ping" and then paste the Private IP address you copied <br>
+12) If it worked, you should see the word "Reply" repeated a few times like this: </em> <br>
 <img width="960" alt="ping worked" src="https://github.com/jaysixco/configure-ad/assets/160427311/59817a5c-d136-4890-886b-a99891dec9b4">
 
 
