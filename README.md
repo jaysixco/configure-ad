@@ -199,6 +199,12 @@ Create 2 Virtual Machines (VMs)
 8) If this pops up (see screenshot), click "Yes". <br>
 ![if this pops up](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/a3f8403a-d15e-4eef-809d-c961677f0596) <br>
 9) As it logs you into the Virtual Machine, there will be a blue page that says "Choose privacy settings for your device". Turn them all off. Then click the blue button at the bottom that says "Accept". <br>
+<img width="960" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/c86005b3-e364-4ee7-bd05-afaedf71e551">
+<img width="960" alt="2" src="https://github.com/jaysixco/configure-ad/assets/160427311/ffbdca21-e6f8-476e-b6db-66decc2e0e99">
+<img width="960" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/a4c60e0d-336a-4519-af7d-ff9badce8736">
+<img width="960" alt="4" src="https://github.com/jaysixco/configure-ad/assets/160427311/ea450435-4eb5-411b-9d26-beea770d4212">
+<img width="960" alt="5" src="https://github.com/jaysixco/configure-ad/assets/160427311/87883c66-8baa-44e1-82d4-611e8ed7bb65">
+
 10) Open command prompt <br>
 11) Type "ping" and then paste the Private IP address you copied <br>
 12) If it worked, you should see the word "Reply" repeated a few times like this: </em> <br>
