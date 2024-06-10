@@ -152,7 +152,10 @@ Create 2 Virtual Machines (VMs)
 <strong> Log in to DC-1's firewall (hint: type) and enable ICMPv4 traffic  </strong><br>
 1) Log in to Windows 2022 VM through Remote Desktop <br>
 1) Starting from the Virtual Machines homepage (see screenshot), right click the name of your Windows 2022 VM and open it in a new tab <br>
+<img width="574" alt="vmhomepage" src="https://github.com/jaysixco/configure-ad/assets/160427311/af994a61-d2c6-4a33-8f41-18fd79c57135"> <br>
+<img width="572" alt="new tab" src="https://github.com/jaysixco/configure-ad/assets/160427311/32b3a4d4-0e0c-43d1-9945-55d98ad69f01"> <br>
 2) In the Window 2022 VM homepage, look for "Public IP address" and click white space next to it to copy that number to your clipboard <br>
+<img width="958" alt="coptoclip" src="https://github.com/jaysixco/configure-ad/assets/160427311/c8a4d375-a65e-49c9-8da0-73110aff4782"> <br>
 3) Click the Search button at the bottom of your screen (1), type "Remote Desktop Connection" (2) and then click "Open" (3) <br>
 ![Remote Desktop Login](https://github.com/jaysixco/monitoring-traffic-rd/assets/160427311/171f3b17-5895-4a7f-9591-1d7b359c3191)
 4) Press the "Ctrl" and "V" button on your keyboard at the same time to paste the number you copied in step 2 and then click "Connect" <br>
