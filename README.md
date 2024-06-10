@@ -426,6 +426,7 @@ Done. Everything correct, just needs a screenshot run.</em>
 <img width="307" alt="click change" src="https://github.com/jaysixco/configure-ad/assets/160427311/794905cf-860e-451b-becb-031589a41a33">
 <img width="242" alt="click circle, type mydomain, click Ok" src="https://github.com/jaysixco/configure-ad/assets/160427311/d2c750e1-d659-44e8-9ad5-5e72d487c384">
 <img width="342" alt="page that appears type" src="https://github.com/jaysixco/configure-ad/assets/160427311/86749a8a-34ee-4c08-829c-7200b0baf244">
+<img width="265" alt="this box will pop up telling you that you must restart, click OK" src="https://github.com/jaysixco/configure-ad/assets/160427311/7ed3a83b-d09f-4b37-8da2-513a3f2d546d">
 
 
 
