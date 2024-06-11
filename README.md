@@ -351,8 +351,8 @@ Create a password >  <br>
 5) Type “domain users”, click </strong> "Check Names"
 6) There might be a popup asking for credentials. Just type "mydomain.com\jane_admin" for the username and whatever password you created then click "Ok". On the page after that, click "OK" as well.
 
-<strong> Create a bunch of additional users and attempt to log into Client-1 with one of the users </strong><br>
-1) Log in to DC-1 as jane_admin
+<strong> Create a bunch of additional users and attempt to log into Client-1 (Window 10 VM) with one of the users </strong><br>
+1) Exit Window 10 VM and then switch over to WIndow 2022 VM
 2) Open PowerShell_ise as an administrator (type Powershell in start menu search bar, right click "Windows Powershell ISE"(1) > Click "Run as administrator"(2) <br>
  <img width="960" alt="1" src="https://github.com/jaysixco/configure-ad/assets/160427311/c6ac6161-d01a-4ac0-91fe-92fa37c89912"> <br>
 2a) If you're asked whether you want to allow this app to make changes to your device, click "Yes'
@@ -369,9 +369,9 @@ Create a password >  <br>
 <br>
 <img width="854" alt="Capture - ctrl + V, New Script, Run Script" src="https://github.com/jaysixco/configure-ad/assets/160427311/31f27fbd-6c3b-47b7-8751-682adbb25135">
 <br>
-9) After you click the play button (screenshot above), a bunch of accounts will start generating
-10) Type "Active Directory" in the start menu and click "Active Directory Users and Computers"
-11) Click "mydomain.com" and then double click "_EMPLOYEES". You will see that all the accounts being generated are held here. <em>Example below </em>
+9) After you click the play button (screenshot above), a bunch of accounts will start generating <br>
+10) Type "Active Directory" in the start menu and click "Active Directory Users and Computers" <br>
+11) Click "mydomain.com" in the sidebar and then double click "_EMPLOYEES". You will see that all the accounts being generated are held here. <em>Example below </em>
 <br>
 <img width="565" alt="Capture - Users created" src="https://github.com/jaysixco/configure-ad/assets/160427311/352e9fef-cf56-4b6e-8eac-8956c6b9d500">
 <br>
