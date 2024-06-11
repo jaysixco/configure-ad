@@ -378,9 +378,9 @@ Create a password >  <br>
 
 <strong> Log in to Client-1 with one of the accounts </strong><br>
 <em> In the screenshot above, we can see that one of the account names is "bapa.mop" so we will use it for our example. </em><br>
-1) Minimize the Window 2022 VM and then switch over to Client-1
-2) Log out of Client-1 (open command prompt, type "logoff", then press enter)
-3) Log back in with Client-1's public IP address through Remote Desktop.
+1) Minimize the Window 2022 VM and then switch over to Window 10 VM
+2) Log out of Window 10 VM (open command prompt, type "logoff", then press enter)
+3) Log back in with WIndow 10 VM's public IP address through Remote Desktop.
 4) Click "More choices" then "Use a different account"
 5) Type in the username you chose (ex. "bapa.mop" (no "mydomain.com" required)).
 6) If you noticed, because of the script all the accounts have the same password as "Password1" (see screenshot above)<br>
