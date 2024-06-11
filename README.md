@@ -430,6 +430,9 @@ Done. Everything correct, just needs a screenshot run.</em>
 <img width="265" alt="click Restart Now" src="https://github.com/jaysixco/configure-ad/assets/160427311/0c179d3a-64a6-46a8-abd2-33b970b5f8ee">
 
 
+<img width="282" alt="remo for nonad users - click Add" src="https://github.com/jaysixco/configure-ad/assets/160427311/60782dae-e5b6-4d39-b258-50cc44a12ea3">
+<img width="342" alt="type dom users, click check names" src="https://github.com/jaysixco/configure-ad/assets/160427311/ab30e1f2-6b86-40ba-a386-1a1e82b4c6a7">
+<img width="282" alt="crem for nonad users - on the pg after that click Ok (3)" src="https://github.com/jaysixco/configure-ad/assets/160427311/29e2b2b2-d65c-4870-a6d4-5c24532d2910">
 
 
 
