@@ -266,11 +266,14 @@ Create a password >  <br>
 <br>
 4) Type "_EMPLOYEES" (Underscore not mandatory in '_EMPLOYEES') <br>
 <br>
+<img width="328" alt="employees" src="https://github.com/jaysixco/configure-ad/assets/160427311/3c5df8a7-1190-4748-a8d9-42ef6183977f">
+<br>
 
 <strong> Create a new OU named “_ADMINS”  </strong><br>
 1) Right click "mydomain.com" <br>
 2) New > Organizational Unit <br>
 3) type "_ADMINS" <br>
+<img width="328" alt="ou admins" src="https://github.com/jaysixco/configure-ad/assets/160427311/327fcff9-e170-471e-a0a5-f12ae69c543b">
 <br>
 
 <strong> Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”  </strong><br>
@@ -285,6 +288,7 @@ Create a password >  <br>
 4) Make sure the only box that is checked is "Password never expires", then click "Next>" <br>
 <img width="328" alt="3" src="https://github.com/jaysixco/configure-ad/assets/160427311/aecf2c58-f81b-4e18-8193-6616a8bb248c"> <br>
 5) On the page after this, click "Finish"<br>
+<img width="328" alt="pg after this, click finish" src="https://github.com/jaysixco/configure-ad/assets/160427311/a762db89-e8f1-40a4-b76b-4193ff24ca93">
 <br>
 
 <strong> DON'T FORGET to make jane_admin a “Domain Admin” (just because her name is in the Admin folder doesn't mean she's actually an Admin yet). To do this, follow steps below.  </strong><br>
@@ -405,17 +409,13 @@ Done. Everything correct, just needs a screenshot run.</em>
 <br>
 <br>
 
-<img width="328" alt="employees" src="https://github.com/jaysixco/configure-ad/assets/160427311/3c5df8a7-1190-4748-a8d9-42ef6183977f">
-<img width="328" alt="ou admins" src="https://github.com/jaysixco/configure-ad/assets/160427311/327fcff9-e170-471e-a0a5-f12ae69c543b">
 
 
 
-<img width="328" alt="pg after this, click finish" src="https://github.com/jaysixco/configure-ad/assets/160427311/a762db89-e8f1-40a4-b76b-4193ff24ca93">
 
 
-<img width="429" alt="click domain admins, then ok (1)" src="https://github.com/jaysixco/configure-ad/assets/160427311/41d54a04-1d71-4e72-abcc-51bc7da73ed3">
-<img width="343" alt="click Ok (2)" src="https://github.com/jaysixco/configure-ad/assets/160427311/3bbd5254-8d27-4137-9c77-590b77d0225f">
-<img width="308" alt="click Apply, click Ok (3)" src="https://github.com/jaysixco/configure-ad/assets/160427311/16e8dfff-7dc1-4ba2-a839-4fac662d1996">
+
+
 
 
 
