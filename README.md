@@ -344,28 +344,21 @@ Create a password >  <br>
 <strong> In Client-1 (Window 10 VM) rename the PC as mydomain.com\jane_admin </strong><br>
 1) Right click the start button, then click "Systems" <br>
 <img width="960" alt="right click start, click system" src="https://github.com/jaysixco/configure-ad/assets/160427311/e975a35c-af0d-4aa6-aa6d-627f7ab50fe5"><br>
-3) Scroll down <br>
-4) Click "Rename this PC (advanced)" <br>
+2) Scroll down <br>
+3) Click "Rename this PC (advanced)" <br>
 <img width="601" alt="rename this pc" src="https://github.com/jaysixco/configure-ad/assets/160427311/daf013c7-5136-474f-a4d5-64d40361b0e2"><br>
-5) Click "Change" <br>
+4) Click "Change" <br>
 <img width="307" alt="click change" src="https://github.com/jaysixco/configure-ad/assets/160427311/794905cf-860e-451b-becb-031589a41a33"><br>
-6) Click circle next to "Domain" <br>
-7) Type "mydomain.com" and click "Ok" <br>
-8) Then in the page that appears type for username:"mydomain.com\jane_admin" and whatever password you want (should probably use the same password you've been using for other parts) <br>
-9) A box will pop up telling you that you must restart Client-1 Vm in order to apply the changes. Just click "Ok".
-10) There should also be a pop-up (you might have to minimize other screens to see it) that asks if you want to Restart Now or Later. Click the button that says "Restart Now"
-<br>
-
-
-
+5) Click circle next to "Domain", type "mydomain.com" and click "Ok" <br>
 <img width="242" alt="click circle, type mydomain, click Ok" src="https://github.com/jaysixco/configure-ad/assets/160427311/d2c750e1-d659-44e8-9ad5-5e72d487c384"><br>
+6) Then in the page that appears type for username:"mydomain.com\jane_admin" and whatever password you want (should probably use the same password you've been using for other parts) <br>
 <img width="342" alt="page that appears type" src="https://github.com/jaysixco/configure-ad/assets/160427311/86749a8a-34ee-4c08-829c-7200b0baf244"><br>
-<img width="265" alt="this box will pop up telling you that you must restart, click OK" src="https://github.com/jaysixco/configure-ad/assets/160427311/7ed3a83b-d09f-4b37-8da2-513a3f2d546d">
+7) A box will pop up telling you that you must restart Client-1 Vm in order to apply the changes. Just click "Ok".<br>
+<img width="265" alt="this box will pop up telling you that you must restart, click OK" src="https://github.com/jaysixco/configure-ad/assets/160427311/7ed3a83b-d09f-4b37-8da2-513a3f2d546d"> <br>
+8) There should also be a pop-up (you might have to minimize other screens to see it) that asks if you want to Restart Now or Later. Click the button that says "Restart Now"
+<br>
 <img width="265" alt="click Restart Now" src="https://github.com/jaysixco/configure-ad/assets/160427311/0c179d3a-64a6-46a8-abd2-33b970b5f8ee">
-
-
-
-
+<br>
 
 <strong> Remote Desktop for non-administrative users on Client-1 </strong> <br>
 1) Remote Desktop your way back in to Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System") <br>
@@ -374,8 +367,12 @@ Create a password >  <br>
 3) Scroll down and click “Select users that can remotely access this PC” <br>
 <img width="601" alt="#2" src="https://github.com/jaysixco/configure-ad/assets/160427311/55af10b1-6d0a-4286-ae47-39ba468214d9">
 4) Click “Add” <br>
-5) Type “domain users”, click </strong> "Check Names"
-6) There might be a popup asking for credentials. Just type "mydomain.com\jane_admin" for the username and whatever password you created then click "Ok". On the page after that, click "OK" as well.
+<img width="282" alt="remo for nonad users - click Add" src="https://github.com/jaysixco/configure-ad/assets/160427311/60782dae-e5b6-4d39-b258-50cc44a12ea3"> <br>
+5) Type “domain users”, click </strong> "Check Names" <br>
+<img width="342" alt="type dom users, click check names" src="https://github.com/jaysixco/configure-ad/assets/160427311/ab30e1f2-6b86-40ba-a386-1a1e82b4c6a7"> <br>
+6) There might be a popup asking for credentials. Just type "mydomain.com\jane_admin" for the username and whatever password you created then click "Ok". On the page after that, click "OK" as well. <br>
+<img width="282" alt="crem for nonad users - on the pg after that click Ok (3)" src="https://github.com/jaysixco/configure-ad/assets/160427311/29e2b2b2-d65c-4870-a6d4-5c24532d2910"> <br>
+
 
 <strong> Create a bunch of additional users and attempt to log into Client-1 (Window 10 VM) with one of the users </strong><br>
 1) Exit Window 10 VM and then switch over to WIndow 2022 VM
@@ -446,9 +443,7 @@ Done. Everything correct, just needs a screenshot run.</em>
 
 
 
-<img width="282" alt="remo for nonad users - click Add" src="https://github.com/jaysixco/configure-ad/assets/160427311/60782dae-e5b6-4d39-b258-50cc44a12ea3">
-<img width="342" alt="type dom users, click check names" src="https://github.com/jaysixco/configure-ad/assets/160427311/ab30e1f2-6b86-40ba-a386-1a1e82b4c6a7">
-<img width="282" alt="crem for nonad users - on the pg after that click Ok (3)" src="https://github.com/jaysixco/configure-ad/assets/160427311/29e2b2b2-d65c-4870-a6d4-5c24532d2910">
+
 
 
 
