@@ -342,17 +342,30 @@ Create a password >  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;   <strong> Now, log back in through Remote Desktop as labuser </strong> (remember, we haven't joined it to any domain yet)
 
 <strong> In Client-1 (Window 10 VM) rename the PC as mydomain.com\jane_admin </strong><br>
-1) Right click the start button <br>
-2) Click "Systems" <br>
+1) Right click the start button, then click "Systems" <br>
+<img width="960" alt="right click start, click system" src="https://github.com/jaysixco/configure-ad/assets/160427311/e975a35c-af0d-4aa6-aa6d-627f7ab50fe5"><br>
 3) Scroll down <br>
 4) Click "Rename this PC (advanced)" <br>
+<img width="601" alt="rename this pc" src="https://github.com/jaysixco/configure-ad/assets/160427311/daf013c7-5136-474f-a4d5-64d40361b0e2"><br>
 5) Click "Change" <br>
+<img width="307" alt="click change" src="https://github.com/jaysixco/configure-ad/assets/160427311/794905cf-860e-451b-becb-031589a41a33"><br>
 6) Click circle next to "Domain" <br>
 7) Type "mydomain.com" and click "Ok" <br>
 8) Then in the page that appears type for username:"mydomain.com\jane_admin" and whatever password you want (should probably use the same password you've been using for other parts) <br>
 9) A box will pop up telling you that you must restart Client-1 Vm in order to apply the changes. Just click "Ok".
 10) There should also be a pop-up (you might have to minimize other screens to see it) that asks if you want to Restart Now or Later. Click the button that says "Restart Now"
 <br>
+
+
+
+<img width="242" alt="click circle, type mydomain, click Ok" src="https://github.com/jaysixco/configure-ad/assets/160427311/d2c750e1-d659-44e8-9ad5-5e72d487c384"><br>
+<img width="342" alt="page that appears type" src="https://github.com/jaysixco/configure-ad/assets/160427311/86749a8a-34ee-4c08-829c-7200b0baf244"><br>
+<img width="265" alt="this box will pop up telling you that you must restart, click OK" src="https://github.com/jaysixco/configure-ad/assets/160427311/7ed3a83b-d09f-4b37-8da2-513a3f2d546d">
+<img width="265" alt="click Restart Now" src="https://github.com/jaysixco/configure-ad/assets/160427311/0c179d3a-64a6-46a8-abd2-33b970b5f8ee">
+
+
+
+
 
 <strong> Remote Desktop for non-administrative users on Client-1 </strong> <br>
 1) Remote Desktop your way back in to Client-1 as mydomain.com\jane_admin and open system properties (right click Start button > Click "System") <br>
@@ -430,13 +443,7 @@ Done. Everything correct, just needs a screenshot run.</em>
 
 
 
-<img width="960" alt="right click start, click system" src="https://github.com/jaysixco/configure-ad/assets/160427311/e975a35c-af0d-4aa6-aa6d-627f7ab50fe5"><br>
-<img width="601" alt="rename this pc" src="https://github.com/jaysixco/configure-ad/assets/160427311/daf013c7-5136-474f-a4d5-64d40361b0e2"><br>
-<img width="307" alt="click change" src="https://github.com/jaysixco/configure-ad/assets/160427311/794905cf-860e-451b-becb-031589a41a33"><br>
-<img width="242" alt="click circle, type mydomain, click Ok" src="https://github.com/jaysixco/configure-ad/assets/160427311/d2c750e1-d659-44e8-9ad5-5e72d487c384"><br>
-<img width="342" alt="page that appears type" src="https://github.com/jaysixco/configure-ad/assets/160427311/86749a8a-34ee-4c08-829c-7200b0baf244"><br>
-<img width="265" alt="this box will pop up telling you that you must restart, click OK" src="https://github.com/jaysixco/configure-ad/assets/160427311/7ed3a83b-d09f-4b37-8da2-513a3f2d546d">
-<img width="265" alt="click Restart Now" src="https://github.com/jaysixco/configure-ad/assets/160427311/0c179d3a-64a6-46a8-abd2-33b970b5f8ee">
+
 
 
 <img width="282" alt="remo for nonad users - click Add" src="https://github.com/jaysixco/configure-ad/assets/160427311/60782dae-e5b6-4d39-b258-50cc44a12ea3">
