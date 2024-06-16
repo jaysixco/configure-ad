@@ -299,13 +299,22 @@ Create a password >  <br>
 <img width="565" alt="#1" src="https://github.com/jaysixco/configure-ad/assets/160427311/000b1d3d-790c-4715-b83a-72dd8822fa42">
 4) Click "Member Of" tab (1), Click "Add" (2), Type "domain" (3), Click "Check names" (4) <br>
 <img width="486" alt="#2" src="https://github.com/jaysixco/configure-ad/assets/160427311/f74f48b4-4930-47ea-9c50-f18f113193b4">
-8) Click "Domain Admins" <br>
-9) Click following button sequence: "Ok","Ok","Apply","Ok" <br>
+8) Click "Domain Admins, then click "Ok" <br>
+<img width="429" alt="click domain admins, then ok (1)" src="https://github.com/jaysixco/configure-ad/assets/160427311/41d54a04-1d71-4e72-abcc-51bc7da73ed3">
+9) Click "Ok" <br>
+<img width="343" alt="click Ok (2)" src="https://github.com/jaysixco/configure-ad/assets/160427311/3bbd5254-8d27-4137-9c77-590b77d0225f">
+10) Click "Apply", then click "Ok" <br>
+<br>
+<img width="308" alt="click Apply, click Ok (3)" src="https://github.com/jaysixco/configure-ad/assets/160427311/16e8dfff-7dc1-4ba2-a839-4fac662d1996">
 <br>
 
+
+
 <strong> Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”  </strong>
-1) Open command prompt (type "cmd" in Start menu)
-2) Type "logoff" and then press enter to log out
+1) Open command prompt (type "cmd" in Start menu) <br>
+<img width="623" alt="type cmd" src="https://github.com/jaysixco/configure-ad/assets/160427311/f7e90b86-eec5-419e-afdc-147915196b66"> <br>
+2) Type "logoff" and then press enter to log out <br>
+<img width="674" alt="type logoff" src="https://github.com/jaysixco/configure-ad/assets/160427311/8ab751f6-7f82-4733-8e44-06fcd9189129"> <br>
 3) Copy DC-1's Public IP address, if you don't have it already <br>
 4) Open Remote Desktop Login page (type "Remote Desktop" in Start menu <br>
 5) Paste the Public IP address, then click enter.
@@ -419,8 +428,7 @@ Done. Everything correct, just needs a screenshot run.</em>
 
 
 
-<img width="623" alt="type cmd" src="https://github.com/jaysixco/configure-ad/assets/160427311/f7e90b86-eec5-419e-afdc-147915196b66">
-<img width="674" alt="type logoff" src="https://github.com/jaysixco/configure-ad/assets/160427311/8ab751f6-7f82-4733-8e44-06fcd9189129">
+
 
 <img width="960" alt="right click start, click system" src="https://github.com/jaysixco/configure-ad/assets/160427311/e975a35c-af0d-4aa6-aa6d-627f7ab50fe5"><br>
 <img width="601" alt="rename this pc" src="https://github.com/jaysixco/configure-ad/assets/160427311/daf013c7-5136-474f-a4d5-64d40361b0e2"><br>
