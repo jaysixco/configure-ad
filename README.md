@@ -9,10 +9,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 In this tutorial, you are going to play 3 roles:  administrator, agent, user <br>
 In this tutorial, you/we are going to be creating and delegating tickets <br>
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Computer)
