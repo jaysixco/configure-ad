@@ -16,14 +16,6 @@ In this tutorial, you/we are going to be creating and delegating tickets <br>
 
 - Windows 11</b> (22H2)
 
-<h2>List of Prerequisites</h2>
-
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
-
 <h2>Installation Steps</h2>
 
 <p>
