@@ -7,9 +7,9 @@ In this tutorial, we are going to create an *Active Directory from scratch.<br>
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Computer)
+- Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
+- Google Chrome
 
 <h2>Operating Systems Used </h2>
 
