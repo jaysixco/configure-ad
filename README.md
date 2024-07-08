@@ -9,7 +9,6 @@ In this tutorial, we are going to create an *Active Directory from scratch.<br>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Google Chrome
 
 <h2>Operating Systems Used </h2>
 
