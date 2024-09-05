@@ -394,8 +394,6 @@ Create a password >  <br>
 <strong> Finish. </strong>
 
 <p>
-Done. Everything correct, just needs a screenshot run.</em>
-</p>
 <br>
 <br>
 <br>
